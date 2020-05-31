@@ -10,6 +10,9 @@
 # VIM swap files
 .*.sw*
 
+# VIM plugin repos
+autoload/plugged/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
