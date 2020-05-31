@@ -53,9 +53,10 @@ set autowrite      " Automatically save before commands like :next and :make
     ""set wrap linebreak textwidth=100
 set tabpagemax=15   " Set the maximum number of tabpages in editor
 
-" Set some diff options
-set diffopt+=algorithm:patience
-set diffopt+=indent-heuristic
+if has('diffopt')
+    set diffopt+=algorithm:patience
+    set diffopt+=indent-heuristic
+end
 
 " Toggling of hybrid line numbers
 "set number
