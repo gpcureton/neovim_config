@@ -28,6 +28,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
+    " Exuberant Ctags
+    Plug 'https://github.com/vim-scripts/taglist.vim.git'
+
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
 
@@ -57,16 +60,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/junegunn/gv.vim'
 
     " A pluging for the ranger file manager
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     " A Vim plugin for visually displaying indent levels in code
     Plug 'https://github.com/Yggdroot/indentLine.git'
 
     " Lightning fast left-right movement in Vim
-    Plug 'https://github.com/unblevable/quick-scope.git'
+    "Plug 'https://github.com/unblevable/quick-scope.git'
 
     " The missing motion for Vim
-    Plug 'https://github.com/justinmk/vim-sneak.git'
+    "Plug 'https://github.com/justinmk/vim-sneak.git'
 
     " Neovim thin wrapper for GDB, LLDB, PDB and BashDB 
     Plug 'https://github.com/sakhnik/nvim-gdb.git'
