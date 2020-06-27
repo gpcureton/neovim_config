@@ -13,6 +13,8 @@
 autoload/plugged/*
 # VIM Session files
 sessions/*
+# VIM dir browser
+.netrwhist
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
