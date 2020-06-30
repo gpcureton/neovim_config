@@ -9,6 +9,9 @@ map <C-s> :source ~/.config/nvim/init.vim<CR>
 " Use ; for commands.
 nnoremap ; :
 
+" set leader key
+let mapleader = " "
+
 " Some keymapping to handle buffer navigation
 ":imap <C-b> :buffers<cr>i
 ":nmap <C-b> :buffers<cr>
@@ -18,13 +21,22 @@ nnoremap ; :
 ":nmap <M-c> :buffer
 ":map <M-c> :buffer
 
+" Beware! C-[ can emulate the Esc key, the reverse might also be true. Trying
+" to hit Esc will result in :bnext or :bNext
+":nmap <C-[> :bNext<cr>
+":nmap <C-]> :bnext<cr>
+":map <C-[> :bNext<cr>
+":map <C-]> :bnext<cr>
+"
 :nmap <C-p> :bNext<cr>
 :nmap <C-n> :bnext<cr>
 :map <C-p> :bNext<cr>
 :map <C-n> :bnext<cr>
-"
 
-
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
 
 
 

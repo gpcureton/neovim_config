@@ -17,9 +17,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A fancy start screen for (N)vim
     Plug 'https://github.com/mhinz/vim-startify'
 
-    " Vim plugin that shows keybindings in popup 
-    "Plug 'https://github.com/liuchengxu/vim-which-key'
-    "Plug 'https://github.com/liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+    " makes exiting insert mode easy and distraction free! 
+    "Plug 'https://github.com/zhou13/vim-easyescape.git'
 
     " Extended session management for Vim (:mksession on steroids)
     Plug 'https://github.com/xolox/vim-session.git'
@@ -27,6 +26,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Stable version of coc
     "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+
+    " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
+    Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+
+    " YouCompleteMe: a code-completion engine for Vim
+    Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+
+    " The undo history visualizer for VIM 
+    Plug 'https://github.com/mbbill/undotree.git'
 
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'

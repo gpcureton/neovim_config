@@ -13,6 +13,10 @@ source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 "source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/ctrlp.vim
+source $HOME/.config/nvim/plug-config/youcompleteme.vim
+source $HOME/.config/nvim/plug-config/undotree.vim
+source $HOME/.config/nvim/plug-config/taglist.vim
 source $HOME/.config/nvim/plug-config/taboo.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/nerdtree-git-plugin.vim

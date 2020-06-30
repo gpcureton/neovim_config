@@ -1,6 +1,3 @@
-" set leader key
-"let g:mapleader = "\<Space>"
-
 filetype plugin indent on  "Enabling Plugin & Indent
 syntax enable                           " Enables syntax highlighing
 set nocompatible
