@@ -27,11 +27,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
+    " YouCompleteMe: a code-completion engine for Vim
+    "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
     Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
-    " YouCompleteMe: a code-completion engine for Vim
-    Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+    " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
+    Plug 'https://github.com/dyng/ctrlsf.vim.git'
+
+    " A command-line fuzzy finder 
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " The undo history visualizer for VIM 
     Plug 'https://github.com/mbbill/undotree.git'
@@ -73,12 +79,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A Vim plugin for visually displaying indent levels in code
     Plug 'https://github.com/Yggdroot/indentLine.git'
 
-    " Lightning fast left-right movement in Vim
-    "Plug 'https://github.com/unblevable/quick-scope.git'
-
-    " The missing motion for Vim
-    "Plug 'https://github.com/justinmk/vim-sneak.git'
-
     " Neovim thin wrapper for GDB, LLDB, PDB and BashDB 
     Plug 'https://github.com/sakhnik/nvim-gdb.git'
 
@@ -115,6 +115,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Add icons to your (N)vim
     Plug 'ryanoasis/vim-devicons'
+
+    " Embed Neovim in your browser. 
+    "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
     "------------
     " Syntax

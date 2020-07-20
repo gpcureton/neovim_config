@@ -10,7 +10,8 @@ map <C-s> :source ~/.config/nvim/init.vim<CR>
 nnoremap ; :
 
 " set leader key
-let mapleader = " "
+" Leaving set to '' results in using the default '\'
+let mapleader = ''
 
 " Some keymapping to handle buffer navigation
 ":imap <C-b> :buffers<cr>i

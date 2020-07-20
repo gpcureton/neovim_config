@@ -6,22 +6,20 @@ source $HOME/.config/nvim/general/settings.vim
 
 "------------------------------ Key Mappings ---------------------------------
 source $HOME/.config/nvim/keys/mappings.vim
-"source $HOME/.config/nvim/keys/vim-which-key.vim
 
 "---------------------------- Plugin Options ---------------------------------
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
 "source $HOME/.config/nvim/plug-config/coc.vim
+"source $HOME/.config/nvim/plug-config/youcompleteme.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/ctrlp.vim
-source $HOME/.config/nvim/plug-config/youcompleteme.vim
+source $HOME/.config/nvim/plug-config/ctrlsf.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
 source $HOME/.config/nvim/plug-config/taboo.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/nerdtree-git-plugin.vim
-source $HOME/.config/nvim/plug-config/quick-scope.vim
-source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
 "source $HOME/.config/nvim/plug-config/gitgutter.vim
