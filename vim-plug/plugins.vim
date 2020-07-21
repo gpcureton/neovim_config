@@ -37,7 +37,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/dyng/ctrlsf.vim.git'
 
     " A command-line fuzzy finder 
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'https://github.com/junegunn/fzf'
+    "Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
+
+    " Changes Vim working directory to project root. 
+    Plug 'https://github.com/airblade/vim-rooter.git'
 
     " The undo history visualizer for VIM 
     Plug 'https://github.com/mbbill/undotree.git'
