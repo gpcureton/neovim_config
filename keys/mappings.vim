@@ -3,7 +3,7 @@
 "-----------------------------------------------------------------------------
 
 " Reloading the config file
-map <C-s> :source ~/.config/nvim/init.vim<CR>
+map <C-r> :source ~/.config/nvim/init.vim<CR>
 "map <M-r> :source ~/.config/nvim/init.vim<CR>
 
 " Use ; for commands.
