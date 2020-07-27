@@ -51,6 +51,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
+ 
+    " Vim motions on speed! 
+    Plug 'https://github.com/easymotion/vim-easymotion.git'
 
     " A tree explorer plugin for vim. 
     Plug 'https://github.com/preservim/nerdtree.git', { 'on':  'NERDTreeToggle' }
@@ -66,6 +69,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
+
+    " enable repeating supported plugin maps with '.' 
+    Plug 'https://github.com/tpope/vim-repeat.git'
 
     " A Vim plugin which shows git diff markers in the sign column and
     " stages/previews/undoes hunks and partial hunks.
