@@ -3,11 +3,12 @@
 "-----------------------------------------------------------------------------
 
 " Reloading the config file
-map <C-r> :source ~/.config/nvim/init.vim<CR>
+map <leader>r :source ~/.config/nvim/init.vim<CR>
+"map <C-r> :source ~/.config/nvim/init.vim<CR>
 "map <M-r> :source ~/.config/nvim/init.vim<CR>
 
 " Use ; for commands.
-nnoremap ; :
+"nnoremap ; :
 
 " set leader key
 " Leaving set to '' results in using the default '\'
@@ -38,6 +39,8 @@ nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
+
+nnoremap <leader>nh :nohlsearch<CR>
 
 
 
