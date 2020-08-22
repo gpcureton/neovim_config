@@ -13,6 +13,7 @@ source $HOME/.config/nvim/plug-config/vim-session.vim
 "source $HOME/.config/nvim/plug-config/coc.vim
 "source $HOME/.config/nvim/plug-config/youcompleteme.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/ctrlp.vim
 source $HOME/.config/nvim/plug-config/ctrlsf.vim
 source $HOME/.config/nvim/plug-config/undotree.vim

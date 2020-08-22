@@ -40,6 +40,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/junegunn/fzf'
     "Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
 
+    " Checkout branches and tags with fzf
+    Plug 'https://github.com/stsewd/fzf-checkout.vim.git'
+
     " Changes Vim working directory to project root. 
     Plug 'https://github.com/airblade/vim-rooter.git'
 
