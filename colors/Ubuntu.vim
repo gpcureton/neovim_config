@@ -44,7 +44,8 @@ hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#96cbfe
 hi Identifier      guifg=#B6B7EB
 hi Ignore          guifg=#808080 guibg=bg
-hi IncSearch       guifg=#C4BE89 guibg=#000000
+"hi IncSearch       guifg=#C4BE89 guibg=#000000
+hi IncSearch       guifg=#CF0003 guibg=#FFFFFF
 
 hi Keyword         guifg=#92C5F7               gui=none
 hi Label           guifg=#A8FF60               gui=none
@@ -66,7 +67,8 @@ hi PreCondit       guifg=#DAD085               gui=none
 hi PreProc         guifg=#DAD085
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#92C5F7               gui=none
-hi Search          guifg=#000000 guibg=#B4EC85
+"hi Search          guifg=#000000 guibg=#B4EC85
+hi Search          guifg=#CF0003 guibg=none
 " marks
 hi SignColumn      guifg=#DAD085 guibg=#232526
 hi SpecialChar     guifg=#92C5F7               gui=none

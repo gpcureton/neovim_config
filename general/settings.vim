@@ -28,6 +28,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\[HEX=\%02
 set laststatus=2                        " Always display the status line
 set cursorline                          " Enable highlighting of the current line
 set cursorcolumn                        " Enable highlighting of the current column
+set colorcolumn=80
 set nojoinspaces    " Prevents inserting two spaces after punctuation on a join (J)
     ""set background=dark                     " tell vim what the background color looks like
     ""set showtabline=2                       " Always show tabs 
@@ -40,11 +41,11 @@ set formatoptions-=cro                  " Stop newline continution of comments
     ""set clipboard=unnamedplus               " Copy paste between vim and everything else
     ""set autochdir                           " Your working directory will always be the same as your working directory
 set showcmd         " Show (partial) command in status line.
-set showmatch       " Show matching brackets.
+"set showmatch       " Show matching brackets.
     ""set ignorecase     " Do case insensitive matching
-set smartcase       " Do smart case matching
+"set smartcase       " Do smart case matching
     ""set incsearch      " Incremental search
-set hlsearch        " Highlight searches , Ctrl-S is being captured to initiate a search
+"set hlsearch        " Highlight searches , Ctrl-S is being captured to initiate a search
 set autowrite      " Automatically save before commands like :next and :make
     ""set nolinebreak
     ""set wrap linebreak textwidth=100

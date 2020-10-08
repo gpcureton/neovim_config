@@ -25,13 +25,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/xolox/vim-misc.git'
 
     " Stable version of coc
-    "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
     " YouCompleteMe: a code-completion engine for Vim
     "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
 
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
-    Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+    "Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
     " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
     Plug 'https://github.com/dyng/ctrlsf.vim.git'
@@ -42,6 +42,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Checkout branches and tags with fzf
     Plug 'https://github.com/stsewd/fzf-checkout.vim.git'
+
+    "  Enhanced in-file search for Vim
+    Plug 'https://github.com/wincent/loupe.git'
 
     " Changes Vim working directory to project root. 
     Plug 'https://github.com/airblade/vim-rooter.git'
@@ -131,6 +134,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Embed Neovim in your browser. 
     "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
+    " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
+    Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
     "------------
     " Syntax
