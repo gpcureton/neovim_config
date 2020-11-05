@@ -12,6 +12,7 @@ let g:startify_lists = [
           \ ]
 let g:startify_bookmarks = [
             \ '~/.config/nvim/init.vim',
+            \ '~/.config/nvim/coc-settings.json',
             \ '~/.bashrc',
             \ '~/.bashrc_local',
             \ '~/.bash_profile',
