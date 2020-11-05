@@ -52,6 +52,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " The undo history visualizer for VIM 
     Plug 'https://github.com/mbbill/undotree.git'
 
+    " Maximizes and restores the current window in Vim. 
+    Plug 'https://github.com/szw/vim-maximizer.git'
+
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
