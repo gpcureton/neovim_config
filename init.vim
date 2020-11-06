@@ -10,7 +10,8 @@ source $HOME/.config/nvim/keys/mappings.vim
 "---------------------------- Plugin Options ---------------------------------
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
-source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/coc/coc.vim
+source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 "source $HOME/.config/nvim/plug-config/youcompleteme.vim
 source $HOME/.config/nvim/plug-config/vim-snippets.vim
 source $HOME/.config/nvim/plug-config/fzf.vim

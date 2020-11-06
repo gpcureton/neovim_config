@@ -17,21 +17,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A fancy start screen for (N)vim
     Plug 'https://github.com/mhinz/vim-startify'
 
-    " makes exiting insert mode easy and distraction free! 
-    "Plug 'https://github.com/zhou13/vim-easyescape.git'
-
     " Extended session management for Vim (:mksession on steroids)
     Plug 'https://github.com/xolox/vim-session.git'
     Plug 'https://github.com/xolox/vim-misc.git'
 
     " Stable version of coc
     Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
-
-    " YouCompleteMe: a code-completion engine for Vim
-    "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
-
-    " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
-    "Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
     " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
     Plug 'https://github.com/dyng/ctrlsf.vim.git'
@@ -61,6 +52,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
+    " Modern Task System for Project Building, Testing and Deploying
+    Plug 'https://github.com/skywind3000/asynctasks.vim.git'
+    " Run Async Shell Commands in and output to the Quickfix Window
+    Plug 'https://github.com/skywind3000/asyncrun.vim.git'
+
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
  
@@ -85,18 +81,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " enable repeating supported plugin maps with '.' 
     Plug 'https://github.com/tpope/vim-repeat.git'
 
-    " A Vim plugin which shows git diff markers in the sign column and
-    " stages/previews/undoes hunks and partial hunks.
-    "Plug 'https://github.com/airblade/vim-gitgutter.git'
-
     " Show a diff using Vim its sign column.
     Plug 'https://github.com/mhinz/vim-signify.git'
 
     " A git commit browser in Vim
     Plug 'https://github.com/junegunn/gv.vim'
-
-    " A pluging for the ranger file manager
-    "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     " A Vim plugin for visually displaying indent levels in code
     Plug 'https://github.com/Yggdroot/indentLine.git'
@@ -118,9 +107,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
     Plug 'https://github.com/junegunn/vim-easy-align'
 
-    " Any valid git URL is allowed
-    "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
     "Plug 'SirVer/ultisnips'
     Plug 'https://github.com/honza/vim-snippets'
 
@@ -138,11 +124,34 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Add icons to your (N)vim
     Plug 'ryanoasis/vim-devicons'
 
+    " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
+    Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
+
+    "-----------------
+    " Plugin Graveyard
+    "-----------------
+
+    " makes exiting insert mode easy and distraction free! 
+    "Plug 'https://github.com/zhou13/vim-easyescape.git'
+
+    " A pluging for the ranger file manager
+    "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+    " A Vim plugin which shows git diff markers in the sign column and
+    " stages/previews/undoes hunks and partial hunks.
+    "Plug 'https://github.com/airblade/vim-gitgutter.git'
+
+    " Any valid git URL is allowed
+    "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
     " Embed Neovim in your browser. 
     "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
-    " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
-    Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
+    " YouCompleteMe: a code-completion engine for Vim
+    "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+
+    " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
+    "Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
     "------------
     " Syntax
