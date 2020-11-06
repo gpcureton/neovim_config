@@ -55,6 +55,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Maximizes and restores the current window in Vim. 
     Plug 'https://github.com/szw/vim-maximizer.git'
 
+    " A multi-language debugging system for Vim
+    Plug 'https://github.com/puremourning/vimspector.git'
+
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 

@@ -20,6 +20,7 @@ source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/ctrlsf.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vim-maximizer.vim
+source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
 source $HOME/.config/nvim/plug-config/taboo.vim
 "source $HOME/.config/nvim/plug-config/nerdtree.vim
