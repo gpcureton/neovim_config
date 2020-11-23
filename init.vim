@@ -17,10 +17,11 @@ source $HOME/.config/nvim/plug-config/vim-snippets.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
+source $HOME/.config/nvim/plug-config/neoformat.vim
 "source $HOME/.config/nvim/plug-config/ctrlp.vim
 source $HOME/.config/nvim/plug-config/ctrlsf.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
-source $HOME/.config/nvim/plug-config/vim-maximizer.vim
+"source $HOME/.config/nvim/plug-config/vim-maximizer.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
 source $HOME/.config/nvim/plug-config/taboo.vim

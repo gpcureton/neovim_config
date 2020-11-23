@@ -24,12 +24,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
+    " A (Neo)vim plugin for formatting code. 
+    Plug 'https://github.com/sbdchd/neoformat.git'
+
     " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
     Plug 'https://github.com/dyng/ctrlsf.vim.git'
 
     " A command-line fuzzy finder 
-    Plug 'https://github.com/junegunn/fzf'
-    "Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'https://github.com/junegunn/fzf.vim'
 
     " Checkout branches and tags with fzf
     Plug 'https://github.com/stsewd/fzf-checkout.vim.git'
@@ -73,7 +76,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/gcmt/taboo.vim.git'
 
     " Buffer Explorer
-    Plug 'https://github.com/jlanzarotta/bufexplorer.git'
+    "Plug 'https://github.com/jlanzarotta/bufexplorer.git'
 
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -94,8 +97,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/sakhnik/nvim-gdb.git'
 
     " The interactive scratchpad for hackers. 
-    "Plug 'https://github.com/metakirby5/codi.vim' " Original repo, preferred
-    Plug 'https://github.com/ChristianChiarulli/codi.vim'
+    Plug 'https://github.com/metakirby5/codi.vim'
 
     " Flake8 plugin for Vim
     Plug 'nvie/vim-flake8'
