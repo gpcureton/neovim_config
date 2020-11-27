@@ -20,6 +20,9 @@ let g:coc_global_extensions = [
   \ 'coc-bookmark',
   \ 'coc-prettier',
   \ 'coc-xml',
-  \ 'coc-tabnine',
+  \ 'coc-texlab',
+  \ 'coc-bibtex',
   \ 'coc-highlight'
   \ ]
+
+  "\ 'coc-tabnine',

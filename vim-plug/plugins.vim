@@ -63,6 +63,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
  
+    " commentary.vim: comment stuff out 
+    Plug 'https://github.com/tpope/vim-commentary.git'
+
     " Vim motions on speed! 
     Plug 'https://github.com/easymotion/vim-easymotion.git'
 
@@ -75,8 +78,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Few utilities for pretty tabs 
     Plug 'https://github.com/gcmt/taboo.vim.git'
 
-    " Buffer Explorer
-    "Plug 'https://github.com/jlanzarotta/bufexplorer.git'
+    " Vim Space Controller
+    Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
 
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -96,6 +99,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Neovim thin wrapper for GDB, LLDB, PDB and BashDB 
     Plug 'https://github.com/sakhnik/nvim-gdb.git'
 
+    " Personal Wiki for Vim
+    Plug 'https://github.com/vimwiki/vimwiki.git'
+
     " The interactive scratchpad for hackers. 
     Plug 'https://github.com/metakirby5/codi.vim'
 
@@ -106,7 +112,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/vim-airline/vim-airline.git'
     Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
-    " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+    " A Vim alignment plugin
     Plug 'https://github.com/junegunn/vim-easy-align'
 
     "Plug 'SirVer/ultisnips'
@@ -132,6 +138,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "-----------------
     " Plugin Graveyard
     "-----------------
+
+    " Buffer Explorer
+    "Plug 'https://github.com/jlanzarotta/bufexplorer.git'
 
     " makes exiting insert mode easy and distraction free! 
     "Plug 'https://github.com/zhou13/vim-easyescape.git'

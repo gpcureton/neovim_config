@@ -24,13 +24,16 @@ source $HOME/.config/nvim/plug-config/undotree.vim
 "source $HOME/.config/nvim/plug-config/vim-maximizer.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
-source $HOME/.config/nvim/plug-config/taboo.vim
+"source $HOME/.config/nvim/plug-config/taboo.vim
+source $HOME/.config/nvim/plug-config/ctrlspace.vim
 "source $HOME/.config/nvim/plug-config/nerdtree.vim
 "source $HOME/.config/nvim/plug-config/nerdtree-git-plugin.vim
+source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
 "source $HOME/.config/nvim/plug-config/gitgutter.vim
+source $HOME/.config/nvim/plug-config/vimwiki.vim
 source $HOME/.config/nvim/plug-config/vim-signify.vim
 source $HOME/.config/nvim/plug-config/codi.vim
 "source $HOME/.config/nvim/plug-config/flake8.vim

@@ -10,13 +10,24 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
+" Fuzzy finder for all files from current dir down
 "nnoremap <leader>f :FZF
 nnoremap <leader>f :Files
-"map <C-f> :Files<CR>
+
+" Fuzzy finder for all of the currently open buffers
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
-"nnoremap <leader>t :Tags<CR>
+
+" Fuzzy finder for existing marks (persistent and user defined)
 nnoremap <leader>m :Marks<CR>
+
+" Fuzzy find of results of RipGrep
+nnoremap <leader>g :Rg<CR>
+
+" What is the difference between Lines and BLines?
+"map <leader>l :Lines<CR>
+"map <leader>b :BLines<CR>
+
+"nnoremap <leader>t :Tags<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 
