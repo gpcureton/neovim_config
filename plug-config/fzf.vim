@@ -18,7 +18,7 @@ nnoremap <leader>f :Files
 map <leader>b :Buffers<CR>
 
 " Fuzzy finder for existing marks (persistent and user defined)
-nnoremap <leader>m :Marks<CR>
+"nnoremap <leader>m :Marks<CR>
 
 " Fuzzy find of results of RipGrep
 nnoremap <leader>g :Rg<CR>

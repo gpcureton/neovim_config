@@ -69,15 +69,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim motions on speed! 
     Plug 'https://github.com/easymotion/vim-easymotion.git'
 
-    " A tree explorer plugin for vim. 
-    Plug 'https://github.com/preservim/nerdtree.git', { 'on':  'NERDTreeToggle' }
-
-    " A plugin of NERDTree showing git status
-    Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
-
-    " Few utilities for pretty tabs 
-    Plug 'https://github.com/gcmt/taboo.vim.git'
-
     " Vim Space Controller
     Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
 
@@ -104,9 +95,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " The interactive scratchpad for hackers. 
     Plug 'https://github.com/metakirby5/codi.vim'
-
-    " Flake8 plugin for Vim
-    Plug 'nvie/vim-flake8'
 
     " Airline
     Plug 'https://github.com/vim-airline/vim-airline.git'
@@ -138,6 +126,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "-----------------
     " Plugin Graveyard
     "-----------------
+
+    " Few utilities for pretty tabs 
+    "Plug 'https://github.com/gcmt/taboo.vim.git'
+
+    " Flake8 plugin for Vim (now provided by CoC).
+    "Plug 'nvie/vim-flake8'
+
+    " A tree explorer plugin for vim. 
+    "Plug 'https://github.com/preservim/nerdtree.git', { 'on':  'NERDTreeToggle' }
+
+    " A plugin of NERDTree showing git status
+    "Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 
     " Buffer Explorer
     "Plug 'https://github.com/jlanzarotta/bufexplorer.git'
