@@ -13,6 +13,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " Fuzzy finder for all files from current dir down
 "nnoremap <leader>f :FZF
 nnoremap <leader>f :Files
+nnoremap <leader>p :GitFiles<CR>
 
 " Fuzzy finder for all of the currently open buffers
 map <leader>b :Buffers<CR>
