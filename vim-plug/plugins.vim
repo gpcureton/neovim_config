@@ -178,6 +178,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
     Plug 'https://github.com/cocopon/iceberg.vim.git'
+    Plug 'https://github.com/morhetz/gruvbox.git'
 
 
 call plug#end()
