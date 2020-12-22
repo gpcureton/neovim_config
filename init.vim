@@ -46,6 +46,9 @@ colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
 "source $HOME/.config/nvim/themes/onedark.vim
+"let g:gruvbox_contrast_dark = 'soft'
+"let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 
 "------------------------------ Syntax Mappings ------------------------------
 " Stop vim-json from hiding quotes in JSON files
