@@ -179,6 +179,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
     Plug 'https://github.com/cocopon/iceberg.vim.git'
     Plug 'https://github.com/morhetz/gruvbox.git'
+    Plug 'https://github.com/arcticicestudio/nord-vim.git'
+    Plug 'https://github.com/altercation/vim-colors-solarized.git'
+    Plug 'https://github.com/dracula/vim.git'
+    Plug 'https://github.com/rakr/vim-one.git'
 
 
 call plug#end()
