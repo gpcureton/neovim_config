@@ -42,10 +42,10 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "
 "-------------------------- Colours and Highlighting -------------------------
 source $HOME/.config/nvim/colors/colors.vim
-colorscheme Ubuntu
+"colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
-"source $HOME/.config/nvim/themes/onedark.vim
+colorscheme one
 "let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
 let g:gruvbox_contrast_dark = 'hard'
