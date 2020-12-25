@@ -123,6 +123,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
     Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
+    " A vim plugin to access cheat.sh sheets 
+    Plug 'https://gitlab.com/dbeniamine/cheat.sh-vim.git'
+
     "-----------------
     " Plugin Graveyard
     "-----------------
