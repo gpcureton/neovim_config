@@ -9,10 +9,6 @@ if has('termguicolors')
     set termguicolors
 end
 set t_Co=256
-colorscheme Ubuntu
-"colorscheme atom-dark
-"colorscheme iceberg
-"source $HOME/.config/nvim/themes/onedark.vim
 
 " Allows transparent Nvim (not too good for editing)
 "highlight Normal ctermbg=NONE guibg=NONE
