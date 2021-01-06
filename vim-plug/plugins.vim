@@ -126,6 +126,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A vim plugin to access cheat.sh sheets 
     Plug 'https://gitlab.com/dbeniamine/cheat.sh-vim.git'
 
+    " Use nvim/vim's builtin terminal in the floating/popup window 
+    Plug 'https://github.com/voldikss/vim-floaterm.git'
+    Plug 'https://github.com/voldikss/fzf-floaterm.git'
+
     "-----------------
     " Plugin Graveyard
     "-----------------
