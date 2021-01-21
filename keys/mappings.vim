@@ -35,10 +35,10 @@ let mapleader = ''
 :map <C-p> :bNext<cr>
 :map <C-n> :bnext<cr>
 
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
+"nnoremap <leader>h :wincmd h<CR>
+"nnoremap <leader>j :wincmd j<CR>
+"nnoremap <leader>k :wincmd k<CR>
+"nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <leader>nh :nohlsearch<CR>
 
