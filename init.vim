@@ -13,6 +13,7 @@ source $HOME/.config/nvim/plug-config/vim-session.vim
 source $HOME/.config/nvim/plug-config/coc/coc.vim
 source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
 source $HOME/.config/nvim/plug-config/vim-snippets.vim
+source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
@@ -41,7 +42,6 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/flake8.vim
 "
 "-------------------------- Colours and Highlighting -------------------------
-source $HOME/.config/nvim/colors/colors.vim
 "colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
@@ -49,6 +49,7 @@ colorscheme one
 "let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
 let g:gruvbox_contrast_dark = 'hard'
+source $HOME/.config/nvim/colors/colors.vim
 
 "------------------------------ Syntax Mappings ------------------------------
 " Stop vim-json from hiding quotes in JSON files

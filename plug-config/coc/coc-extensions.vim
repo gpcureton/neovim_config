@@ -20,7 +20,7 @@ let g:coc_global_extensions = [
   \ 'coc-bookmark',
   \ 'coc-prettier',
   \ 'coc-xml',
-  \ 'coc-texlab',
+  \ 'coc-vimtex',
   \ 'coc-bibtex',
   \ 'coc-highlight'
   \ ]
