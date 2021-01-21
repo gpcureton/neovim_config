@@ -27,6 +27,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A (Neo)vim plugin for formatting code. 
     Plug 'https://github.com/sbdchd/neoformat.git'
 
+    " A modern Vim and neovim filetype plugin for LaTeX files.
+    Plug 'https://github.com/lervag/vimtex.git'
+
     " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
     Plug 'https://github.com/dyng/ctrlsf.vim.git'
 
@@ -129,6 +132,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Use nvim/vim's builtin terminal in the floating/popup window 
     Plug 'https://github.com/voldikss/vim-floaterm.git'
     Plug 'https://github.com/voldikss/fzf-floaterm.git'
+
+    "Find, Filter, Preview, Pick. All lua, all the time.
+    Plug 'https://github.com/nvim-lua/popup.nvim'
+    Plug 'https://github.com/nvim-lua/plenary.nvim'
+    Plug 'https://github.com/nvim-telescope/telescope.nvim.git'
 
     "-----------------
     " Plugin Graveyard

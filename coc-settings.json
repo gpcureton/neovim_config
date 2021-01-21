@@ -22,8 +22,13 @@
     "explorer.keyMappings": {
         "<cr>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
-   },
+   }
+
+    // "coc.source.vimtex.disableSyntaxes: ["]",   // disabled syntax names                   
+    // "coc.source.vimtex.enable": true,      // set to false to disable this source     
+    // "coc.source.vimtex.priority": 99,      // priority of source, default 99          
+    // "coc.source.vimtex.shortcut": "sfsdf"    // shortcut used in menu of completion item
 
     // texlab
-    "latex.build.args": ["-pdflua", "-interaction=nonstopmode", "-synctex=1", "%f"]
+    //"latex.build.args": ["-pdflua", "-interaction=nonstopmode", "-synctex=1", "%f"]
 }
