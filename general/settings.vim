@@ -1,24 +1,28 @@
 filetype plugin indent on  "Enabling Plugin & Indent
 syntax enable                           " Enables syntax highlighing
 set nocompatible
-"""set backspace=indent,eol,start confirm
+"set backspace=indent,eol,start confirm
 set hidden                              " Required to keep multiple buffers open multiple buffers
-""set nowrap                              " Display long lines as just one line
+set nowrap                              " Display long lines as just one line
+"set wrap linebreak textwidth=100
+"set nolinebreak
 set encoding=utf-8                      " The encoding displayed 
-""set pumheight=10                        " Makes popup menu smaller
+"set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler                               " Show the cursor position all the time
 set cmdheight=1                         " More space for displaying messages
-""set iskeyword+=-                       " treat dash separated words as a word text object"
+"set iskeyword+=-                       " treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set t_Co=256                            " Support 256 colors
+"set t_Co=256                            " Support 256 colors
+set scrolloff=8                         " Start scrolling when this number of lines from top/bottom of buffer
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=4                           " Insert 2 spaces for a tab
 set softtabstop=4                       " Number of spaces that a <Tab> counts for while performing editing
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
-    ""set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set signcolumn=yes
+"set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
@@ -30,12 +34,12 @@ set cursorline                          " Enable highlighting of the current lin
 set cursorcolumn                        " Enable highlighting of the current column
 set colorcolumn=80
 set nojoinspaces    " Prevents inserting two spaces after punctuation on a join (J)
-    ""set background=dark                     " tell vim what the background color looks like
+"set background=dark                     " tell vim what the background color looks like
 set showtabline=0                       " Show tabline? 
-    ""set noshowmode                          " We don't need to see things like -- INSERT -- anymore
-    ""set nobackup                            " This is recommended by coc
-    ""set nowritebackup                       " This is recommended by coc
-set updatetime=250                      " Faster completion
+"set noshowmode                          " We don't need to see things like -- INSERT -- anymore
+set nobackup                            " This is recommended by coc
+set nowritebackup                       " This is recommended by coc
+set updatetime=50                      " Faster completion
 set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
     ""set clipboard=unnamedplus               " Copy paste between vim and everything else
@@ -47,8 +51,6 @@ set showcmd         " Show (partial) command in status line.
     ""set incsearch      " Incremental search
 "set hlsearch        " Highlight searches , Ctrl-S is being captured to initiate a search
 set autowrite      " Automatically save before commands like :next and :make
-    ""set nolinebreak
-    ""set wrap linebreak textwidth=100
 set tabpagemax=15   " Set the maximum number of tabpages in editor
 
 if has('diffopt')
