@@ -53,21 +53,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/szw/vim-maximizer.git'
 
     " A multi-language debugging system for Vim
-    Plug 'https://github.com/puremourning/vimspector.git'
+    "Plug 'https://github.com/puremourning/vimspector.git'
 
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
     " Modern Task System for Project Building, Testing and Deploying
-    Plug 'https://github.com/skywind3000/asynctasks.vim.git'
+    "Plug 'https://github.com/skywind3000/asynctasks.vim.git'
     " Run Async Shell Commands in and output to the Quickfix Window
-    Plug 'https://github.com/skywind3000/asyncrun.vim.git'
+    "Plug 'https://github.com/skywind3000/asyncrun.vim.git'
 
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
  
     " commentary.vim: comment stuff out 
-    Plug 'https://github.com/tpope/vim-commentary.git'
+    "Plug 'https://github.com/tpope/vim-commentary.git'
 
     " Vim motions on speed! 
     Plug 'https://github.com/easymotion/vim-easymotion.git'
@@ -91,13 +91,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/Yggdroot/indentLine.git'
 
     " Neovim thin wrapper for GDB, LLDB, PDB and BashDB 
-    Plug 'https://github.com/sakhnik/nvim-gdb.git'
+    "Plug 'https://github.com/sakhnik/nvim-gdb.git'
 
     " Personal Wiki for Vim
-    Plug 'https://github.com/vimwiki/vimwiki.git'
+    "Plug 'https://github.com/vimwiki/vimwiki.git'
 
     " The interactive scratchpad for hackers. 
-    Plug 'https://github.com/metakirby5/codi.vim'
+    "Plug 'https://github.com/metakirby5/codi.vim'
 
     " Airline
     Plug 'https://github.com/vim-airline/vim-airline.git'
@@ -109,25 +109,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'SirVer/ultisnips'
     Plug 'https://github.com/honza/vim-snippets'
 
-    Plug 'https://github.com/roxma/nvim-yarp.git'
-    Plug 'https://github.com/ncm2/ncm2.git'
+    " Slim, Fast and Hackable Completion Framework for Neovim
+    "Plug 'https://github.com/ncm2/ncm2.git'
+    "Plug 'https://github.com/roxma/nvim-yarp.git'
     " enable ncm2 for all buffers
     "autocmd BufEnter * call ncm2#enable_for_buffer()
+
 
     " NOTE: you need to install completion sources to get completions.
     "Check
     " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-    Plug 'https://github.com/ncm2/ncm2-bufword'
-    Plug 'https://github.com/ncm2/ncm2-path'
+    "Plug 'https://github.com/ncm2/ncm2-bufword'
+    "Plug 'https://github.com/ncm2/ncm2-path'
 
     " Add icons to your (N)vim
     Plug 'ryanoasis/vim-devicons'
 
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
-    Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
+    "Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
     " A vim plugin to access cheat.sh sheets 
-    Plug 'https://gitlab.com/dbeniamine/cheat.sh-vim.git'
+    "Plug 'https://gitlab.com/dbeniamine/cheat.sh-vim.git'
 
     " Use nvim/vim's builtin terminal in the floating/popup window 
     Plug 'https://github.com/voldikss/vim-floaterm.git'
@@ -183,20 +185,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Syntax
     "------------
  
-    Plug 'https://github.com/tpope/vim-markdown'
-    "Plug 'https://github.com/plasticboy/vim-markdown.git'
-    "Plug 'https://github.com/gabrielelana/vim-markdown.git'
+    "Plug 'https://github.com/tpope/vim-markdown'
 
     "------------
     " Color Schemes
     "------------
 
-    Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
-    Plug 'https://github.com/cocopon/iceberg.vim.git'
-    Plug 'https://github.com/morhetz/gruvbox.git'
-    Plug 'https://github.com/arcticicestudio/nord-vim.git'
-    Plug 'https://github.com/altercation/vim-colors-solarized.git'
-    Plug 'https://github.com/dracula/vim.git'
+    "Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
+    "Plug 'https://github.com/cocopon/iceberg.vim.git'
+    "Plug 'https://github.com/morhetz/gruvbox.git'
+    "Plug 'https://github.com/arcticicestudio/nord-vim.git'
+    "Plug 'https://github.com/altercation/vim-colors-solarized.git'
+    "Plug 'https://github.com/dracula/vim.git'
     Plug 'https://github.com/rakr/vim-one.git'
 
 
