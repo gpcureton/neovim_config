@@ -69,6 +69,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " commentary.vim: comment stuff out 
     "Plug 'https://github.com/tpope/vim-commentary.git'
 
+    " surround.vim: quoting/parenthesizing made simple 
+    Plug 'https://github.com/tpope/vim-surround.git'
+
     " Vim motions on speed! 
     Plug 'https://github.com/easymotion/vim-easymotion.git'
 
@@ -173,7 +176,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
     " Embed Neovim in your browser. 
-    "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
     " YouCompleteMe: a code-completion engine for Vim
     "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
