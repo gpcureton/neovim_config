@@ -40,6 +40,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Checkout branches and tags with fzf
     Plug 'https://github.com/stsewd/fzf-checkout.vim.git'
 
+    " Nvim Treesitter configurations and abstraction layer
+    Plug 'https://github.com/nvim-treesitter/nvim-treesitter.git', {'do': ':TSUpdate'}
+    Plug 'https://github.com/nvim-treesitter/playground.git'
+
     "  Enhanced in-file search for Vim
     Plug 'https://github.com/wincent/loupe.git'
 
