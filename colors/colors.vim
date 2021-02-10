@@ -11,8 +11,8 @@ end
 set t_Co=256
 
 " Allows transparent Nvim (not too good for editing)
-"highlight Normal ctermbg=NONE guibg=NONE
-"highlight NonText ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 
 "New colours for vimdiff
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white

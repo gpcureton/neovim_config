@@ -47,6 +47,9 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
+"colorscheme gruvbox
+"colorscheme nord
+"colorscheme dracula
 colorscheme one
 "let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
