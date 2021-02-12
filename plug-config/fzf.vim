@@ -56,6 +56,15 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" Fuzzy completion of file paths
+inoremap <expr> <c-x><c-f> fzf#vim#complete#path(
+    \ "find . -path '*/\.*' -prune -o -print \| sed '1d;s:^..::'",
+    \ fzf#wrap({'dir': expand('%:p:h')}))
+if has('nvim')
+  au! TermOpen * tnoremap <buffer> <Esc> <c-\><c-n>
+  au! FileType fzf tunmap <buffer> <Esc>
+endif
+
 "Get Files
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
