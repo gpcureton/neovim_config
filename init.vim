@@ -51,6 +51,7 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "colorscheme nord
 "colorscheme dracula
 colorscheme one
+"colorscheme palenight
 "let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
 let g:gruvbox_contrast_dark = 'hard'

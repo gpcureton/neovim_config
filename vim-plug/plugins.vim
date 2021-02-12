@@ -205,6 +205,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/altercation/vim-colors-solarized.git'
     Plug 'https://github.com/dracula/vim.git'
     Plug 'https://github.com/rakr/vim-one.git'
+    Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
 
 
 call plug#end()
