@@ -57,7 +57,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/szw/vim-maximizer.git'
 
     " A multi-language debugging system for Vim
-    "Plug 'https://github.com/puremourning/vimspector.git'
+    Plug 'https://github.com/puremourning/vimspector.git'
+
+    " Improved terminal navigation by The Primeagen
+    Plug 'https://github.com/ThePrimeagen/harpoon.git'
 
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
@@ -133,7 +136,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
 
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
-    "Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
+    Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
     " A vim plugin to access cheat.sh sheets 
     "Plug 'https://gitlab.com/dbeniamine/cheat.sh-vim.git'
@@ -180,7 +183,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
     " Embed Neovim in your browser. 
-    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
     " YouCompleteMe: a code-completion engine for Vim
     "Plug 'https://github.com/ycm-core/YouCompleteMe.git'
