@@ -12,21 +12,22 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 " Fuzzy finder for all files from current dir down
 "nnoremap <leader>f :FZF
-nnoremap <leader>f :Files
-nnoremap <leader>p :GitFiles<CR>
+"nnoremap <leader>f :Files
+"nnoremap <leader>p :GitFiles<CR>
 
 " Fuzzy finder for all of the currently open buffers
-map <leader>b :Buffers<CR>
+"map <leader>b :Buffers<CR>
 
 " Fuzzy finder for existing marks (persistent and user defined)
 "nnoremap <leader>m :Marks<CR>
 
 " Fuzzy find of results of RipGrep
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>rg :Rg<CR>
+nnoremap <leader>ag :Ag<CR>
 
 " What is the difference between Lines and BLines?
-"map <leader>l :Lines<CR>
-"map <leader>b :BLines<CR>
+map <leader>l :Lines<CR>   # Show the lines in the current buffer
+map <leader>b :BLines<CR>  # Show the lines in all loaded buffers
 
 "nnoremap <leader>t :Tags<CR>
 
