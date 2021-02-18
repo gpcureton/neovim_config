@@ -12,7 +12,7 @@ nnoremap <leader>fb :lua require('telescope.builtin').buffers()<CR>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>fw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
+nnoremap <leader>fh :lua require('telescope.builtin').help_tags()<CR>
 
 " From The Primeagen. I think this helps feed results from Telescope into the
 " quickfix buffer, when they can be further manipulated.
