@@ -23,7 +23,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Quickstart configurations for the Nvim LSP client 
     Plug 'https://github.com/neovim/nvim-lspconfig.git'
-    Plug 'https://github.com/nvim-lua/completion-nvim.git'
+    "Plug 'https://github.com/nvim-lua/completion-nvim.git'
+    Plug 'https://github.com/hrsh7th/nvim-compe.git'
 
     " A (Neo)vim plugin for formatting code. 
     Plug 'https://github.com/sbdchd/neoformat.git'
@@ -132,7 +133,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/junegunn/vim-easy-align'
 
     "Plug 'SirVer/ultisnips'
-    Plug 'https://github.com/honza/vim-snippets'
+    "Plug 'https://github.com/honza/vim-snippets'
+    Plug 'https://github.com/norcalli/snippets.nvim.git'
 
     " Slim, Fast and Hackable Completion Framework for Neovim
     "Plug 'https://github.com/ncm2/ncm2.git'

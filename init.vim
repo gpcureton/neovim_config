@@ -14,6 +14,7 @@ source $HOME/.config/nvim/colors/colors.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
 source $HOME/.config/nvim/plug-config/nvim-lsp.vim
+source $HOME/.config/nvim/plug-config/nvim-compe.vim
 source $HOME/.config/nvim/plug-config/vim-snippets.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/fzf.vim

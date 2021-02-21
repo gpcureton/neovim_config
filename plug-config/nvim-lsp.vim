@@ -15,7 +15,12 @@ nmap <silent> ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 lua << EOF 
-local on_attach = require'completion'.on_attach
+-- local on_attach = require'completion'.on_attach
+
+require'snippets'.use_suggested_mappings()
+local nvim_lsp = require('lspconfig')
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 require'lspconfig'.clangd.setup {
     on_attach = on_attach, 
@@ -27,7 +32,7 @@ require'lspconfig'.fortls.setup{
 }
 
 require'lspconfig'.pyls.setup{
-    on_attach=require'completion'.on_attach
+    on_attach=on_attach
 }
 
 require'lspconfig'.bashls.setup{
