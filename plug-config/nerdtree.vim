@@ -4,4 +4,4 @@
 "nmap <space>k :NERDTreeToggle<CR>
 "inoremap <leader>/ :NERDTreeToggle<CR>
 "nnoremap <leader>/ :NERDTreeToggle<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
+"nnoremap <leader>n :NERDTreeToggle<CR>

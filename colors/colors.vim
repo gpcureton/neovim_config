@@ -10,12 +10,29 @@ if has('termguicolors')
 end
 set t_Co=256
 
-" Allows transparent Nvim (not too good for editing)
-highlight Normal ctermbg=NONE guibg=NONE
-highlight NonText ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
+colorscheme one
+"colorscheme Ubuntu
+"colorscheme atom-dark
+"colorscheme iceberg
+"colorscheme gruvbox
+"colorscheme nord
+"colorscheme dracula
+"colorscheme palenight
+"let g:gruvbox_contrast_dark = 'soft'
+"let g:gruvbox_contrast_dark = 'medium'
+"let g:gruvbox_contrast_dark = 'hard'
 
 "New colours for vimdiff
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
 highlight DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
 highlight DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
 highlight DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
+
+" Allows transparent Nvim (not too good for editing)
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE

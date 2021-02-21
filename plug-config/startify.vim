@@ -17,5 +17,6 @@ let g:startify_bookmarks = [
             \ '~/.bashrc_local',
             \ '~/.bash_profile',
             \ '~/.config/kitty/kitty.conf',
+            \ '~/.config/picom.conf',
             \ '~/SSEC',
             \ ]

@@ -7,15 +7,19 @@ source $HOME/.config/nvim/general/settings.vim
 "------------------------------ Key Mappings ---------------------------------
 source $HOME/.config/nvim/keys/mappings.vim
 
+"-------------------------- Colours and Highlighting -------------------------
+source $HOME/.config/nvim/colors/colors.vim
+"
 "---------------------------- Plugin Options ---------------------------------
 source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
-source $HOME/.config/nvim/plug-config/coc/coc.vim
-source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
+source $HOME/.config/nvim/plug-config/nvim-lsp.vim
 source $HOME/.config/nvim/plug-config/vim-snippets.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
+source $HOME/.config/nvim/plug-config/harpoon.vim
+source $HOME/.config/nvim/plug-config/fern.vim
 source $HOME/.config/nvim/plug-config/tree-sitter.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
@@ -42,20 +46,9 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/nerdtree-git-plugin.vim
 "source $HOME/.config/nvim/plug-config/gitgutter.vim
 "source $HOME/.config/nvim/plug-config/flake8.vim
-"
-"-------------------------- Colours and Highlighting -------------------------
-"colorscheme Ubuntu
-"colorscheme atom-dark
-"colorscheme iceberg
-"colorscheme gruvbox
-"colorscheme nord
-"colorscheme dracula
-colorscheme one
-"colorscheme palenight
-"let g:gruvbox_contrast_dark = 'soft'
-"let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_contrast_dark = 'hard'
-source $HOME/.config/nvim/colors/colors.vim
+"source $HOME/.config/nvim/plug-config/coc/coc.vim
+"source $HOME/.config/nvim/plug-config/coc/coc-extensions.vim
+
 
 "------------------------------ Syntax Mappings ------------------------------
 " Stop vim-json from hiding quotes in JSON files

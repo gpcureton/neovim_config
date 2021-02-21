@@ -25,9 +25,11 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 nnoremap <leader>rg :Rg<CR>
 nnoremap <leader>ag :Ag<CR>
 
-" What is the difference between Lines and BLines?
-map <leader>l :Lines<CR>   # Show the lines in the current buffer
-map <leader>b :BLines<CR>  # Show the lines in all loaded buffers
+" Show the lines in the current buffer
+map <leader>l :Lines<CR>
+
+" Show the lines in all loaded buffers
+map <leader>b :BLines<CR>
 
 "nnoremap <leader>t :Tags<CR>
 

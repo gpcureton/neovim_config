@@ -21,8 +21,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/xolox/vim-session.git'
     Plug 'https://github.com/xolox/vim-misc.git'
 
-    " Stable version of coc
-    Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+    " Quickstart configurations for the Nvim LSP client 
+    Plug 'https://github.com/neovim/nvim-lspconfig.git'
+    Plug 'https://github.com/nvim-lua/completion-nvim.git'
 
     " A (Neo)vim plugin for formatting code. 
     Plug 'https://github.com/sbdchd/neoformat.git'
@@ -59,16 +60,30 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A multi-language debugging system for Vim
     Plug 'https://github.com/puremourning/vimspector.git'
 
+    " A high performance filetype mode for Neovim which leverages
+    " conceal and highlights your buffer with the correct color codes. 
+    Plug 'https://github.com/norcalli/nvim-terminal.lua.git'
+
     " Improved terminal navigation by The Primeagen
-    Plug 'https://github.com/ThePrimeagen/harpoon.git'
+    "Plug 'https://github.com/ThePrimeagen/harpoon.git'
+
+    " The dark powered file explorer implementation
+    Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
+
+    " General purpose asynchronous tree viewer written in Pure Vim script 
+    Plug 'https://github.com/lambdalisue/fern.vim.git'
+    Plug 'https://github.com/lambdalisue/fern-git-status.vim.git'
+    Plug 'https://github.com/lambdalisue/fern-renderer-nerdfont.vim.git'
+    Plug 'https://github.com/lambdalisue/nerdfont.vim.git'
+    Plug 'https://github.com/lambdalisue/glyph-palette.vim.git'
+    Plug 'https://github.com/lambdalisue/fern-renderer-devicons.vim.git'
+
+    " Add icons to your (N)vim
+    Plug 'https://github.com/ryanoasis/vim-devicons'
+    Plug 'https://github.com/kyazdani42/nvim-web-devicons.git'
 
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
-
-    " Modern Task System for Project Building, Testing and Deploying
-    "Plug 'https://github.com/skywind3000/asynctasks.vim.git'
-    " Run Async Shell Commands in and output to the Quickfix Window
-    "Plug 'https://github.com/skywind3000/asyncrun.vim.git'
 
     " Nerd Commenter
     Plug 'https://github.com/preservim/nerdcommenter.git'
@@ -132,9 +147,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/ncm2/ncm2-bufword'
     "Plug 'https://github.com/ncm2/ncm2-path'
 
-    " Add icons to your (N)vim
-    Plug 'ryanoasis/vim-devicons'
-
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
     Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
@@ -153,6 +165,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "-----------------
     " Plugin Graveyard
     "-----------------
+
+    " Stable version of coc
+    "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 
     " Few utilities for pretty tabs 
     "Plug 'https://github.com/gcmt/taboo.vim.git'
@@ -190,6 +205,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
     "Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+
+    " Modern Task System for Project Building, Testing and Deploying
+    "Plug 'https://github.com/skywind3000/asynctasks.vim.git'
+    " Run Async Shell Commands in and output to the Quickfix Window
+    "Plug 'https://github.com/skywind3000/asyncrun.vim.git'
 
     "------------
     " Syntax
