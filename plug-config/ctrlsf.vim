@@ -1,2 +1,2 @@
-nnoremap <leader>c :CtrlSF
+"nnoremap <leader>cs :CtrlSF
 let g:ctrlsf_default_root = 'project+fw'
