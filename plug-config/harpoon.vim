@@ -11,3 +11,8 @@
 "nnoremap <leader>te :lua require("harpoon.terminal").gotoTerminal(2)<CR>
 "nnoremap <leader>cu :lua require("harpoon.terminal").sendCommand(1, 1)<CR>
 "nnoremap <leader>ce :lua require("harpoon.terminal").sendCommand(1, 2)<CR>
+"
+"
+lua << EOF
+require('harpoon').setup {}
+EOF

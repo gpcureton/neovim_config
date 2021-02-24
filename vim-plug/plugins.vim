@@ -66,7 +66,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/norcalli/nvim-terminal.lua.git'
 
     " Improved terminal navigation by The Primeagen
-    "Plug 'https://github.com/ThePrimeagen/harpoon.git'
+    Plug 'https://github.com/ThePrimeagen/harpoon.git'
 
     " The dark powered file explorer implementation
     Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
@@ -163,6 +163,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
     Plug 'https://github.com/nvim-telescope/telescope.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-menu.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-symbols.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-bibtex.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-fzy-native.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-fzf-writer.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-snippets.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-github.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-project.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-frecency.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
+    
 
     "-----------------
     " Plugin Graveyard
@@ -231,6 +243,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/dracula/vim.git'
     Plug 'https://github.com/rakr/vim-one.git'
     Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
+    Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'
 
 
 call plug#end()
