@@ -14,6 +14,8 @@ nnoremap <leader>fs :lua require('telescope.builtin').grep_string({ search = vim
 nnoremap <leader>fw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap <leader>fh :lua require('telescope.builtin').help_tags()<CR>
 
+nnoremap <leader>gc :lua require('telescope.builtin').git_commits()<CR>
+
 " E5108: Error executing lua : `goto_file_selection_split` is removed and no 
 " longer usable. Use `require('telescope.actions').select_` instead. Take a 
 " look at developers.md for more Information.
@@ -26,7 +28,7 @@ local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
     file_sorter = require('telescope.sorters').get_fzy_sorter,
-    prompt_prefix = ' >',
+    prompt_prefix = '  ',
     color_devicons = true,
 
     file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
@@ -49,4 +51,17 @@ require('telescope').setup {
   }
 }
 require('telescope').load_extension('fzy_native')
+
+-- local M = {}
+-- M.git_branches = function() 
+--     require("telescope.builtin").git_branches({
+--         attach_mappings = function(prompt_bufnr, map) 
+--             map('i', '<c-m>', actions.git_merge_branch)
+--             map('n', '<c-m>', actions.git_merge_branch)
+--             return true
+--         end
+--     })
+-- end
+
+return M
 EOF

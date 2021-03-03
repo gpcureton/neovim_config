@@ -5,15 +5,24 @@
 "let g:signify_sign_delete_first_line = '‾'
 "let g:signify_sign_change            = '~'
 
-let g:signify_sign_add               = ''
-let g:signify_sign_delete            = ''
+"let g:signify_sign_add               = ''
+"let g:signify_sign_delete            = '_'
+"let g:signify_sign_delete_first_line = '‾'
+"let g:signify_sign_change            = ''
+
+"let g:signify_sign_add               = ''
+"let g:signify_sign_delete            = ''
+"let g:signify_sign_delete_first_line = ''
+"let g:signify_sign_change            = ''
+
+let g:signify_sign_add               = ''
+let g:signify_sign_delete            = ''
 let g:signify_sign_delete_first_line = '‾'
-let g:signify_sign_change            = ''
+let g:signify_sign_change            = ''
 
 " I find the numbers distracting
 let g:signify_sign_show_count = 1
 let g:signify_sign_show_text = 1
-
 
 " Jump though hunks
 "let g:signify_mapping_next_hunk = ']c'
@@ -27,6 +36,6 @@ nmap [c <plug>(signify-prev-hunk)
 
 
 " If you like colors instead
-"highlight SignifySignAdd                  ctermbg=green                guibg=#00ff00
-"highlight SignifySignDelete ctermfg=black ctermbg=red    guifg=#ffffff guibg=#ff0000
-"highlight SignifySignChange ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffff00
+highlight SignifySignAdd    ctermfg=black  ctermbg=NONE guifg=green guibg=NONE
+highlight SignifySignDelete ctermfg=black  ctermbg=red  guifg=red guibg=NONE
+highlight SignifySignChange ctermfg=yellow ctermbg=NONE guifg=orange guibg=NONE

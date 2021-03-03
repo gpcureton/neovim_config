@@ -20,6 +20,7 @@ source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/fern.vim
+"source $HOME/.config/nvim/plug-config/nvim-tree.vim
 source $HOME/.config/nvim/plug-config/harpoon.vim
 source $HOME/.config/nvim/plug-config/tree-sitter.vim
 source $HOME/.config/nvim/plug-config/telescope.vim

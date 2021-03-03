@@ -83,6 +83,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/ryanoasis/vim-devicons'
     Plug 'https://github.com/kyazdani42/nvim-web-devicons.git'
 
+    " A file explorer tree for neovim written in lua 
+    "Plug 'https://github.com/kyazdani42/nvim-tree.lua.git'
+
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
@@ -129,6 +132,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/vim-airline/vim-airline.git'
     Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
+    " neovim statusline plugin written in lua
+    "Plug 'https://github.com/glepnir/galaxyline.nvim.git', {'branch': 'main'}
+
     " A Vim alignment plugin
     Plug 'https://github.com/junegunn/vim-easy-align'
 
@@ -163,6 +169,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
     Plug 'https://github.com/nvim-telescope/telescope.nvim.git'
+    "Plug 'https://github.com/gpcureton/telescope.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-menu.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-symbols.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-bibtex.nvim.git'
