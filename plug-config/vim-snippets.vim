@@ -15,5 +15,5 @@
 "imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 "-- Setup for snippets.nvim
-lua << EOF 
-EOF 
+"lua << EOF 
+"EOF 

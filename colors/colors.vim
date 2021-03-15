@@ -19,13 +19,17 @@ colorscheme one
 "colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
-"colorscheme gruvbox
 "colorscheme nord
 "colorscheme dracula
 "colorscheme palenight
+"colorscheme gruvbox
 "let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
-"let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'hard'
+"colorscheme ayu 
+"let ayucolor="light"
+"let ayucolor="mirage"
+let ayucolor="dark"
 
 "New colours for vimdiff
 highlight DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white

@@ -29,6 +29,7 @@ require('telescope').setup {
   defaults = {
     file_sorter = require('telescope.sorters').get_fzy_sorter,
     prompt_prefix = '  ',
+    selection_caret = ' ',
     color_devicons = true,
 
     file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
@@ -39,7 +40,18 @@ require('telescope').setup {
       i = {
         ["<C-x>"] = false,
         -- ["<C-s>"] = actions.goto_file_selection_split,
-        ["<C-q>"] = actions.send_to_qflist,
+        --["<C-q>"] = actions.send_to_qflist,
+        --["<C-q>"] = actions.add_to_qflist,
+        --["<C-q>"] = actions.send_selected_to_qflist,
+        ["<C-q>"] = actions.add_selected_to_qflist,
+      },
+      n = {
+        ["<C-x>"] = false,
+        -- ["<C-s>"] = actions.goto_file_selection_split,
+        --["<C-q>"] = actions.send_to_qflist,
+        --["<C-q>"] = actions.add_to_qflist,
+        --["<C-q>"] = actions.send_selected_to_qflist,
+        ["<C-q>"] = actions.add_selected_to_qflist,
       },
     }
   },

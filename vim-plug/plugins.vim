@@ -77,7 +77,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/lambdalisue/fern-renderer-nerdfont.vim.git'
     Plug 'https://github.com/lambdalisue/nerdfont.vim.git'
     Plug 'https://github.com/lambdalisue/glyph-palette.vim.git'
-    Plug 'https://github.com/lambdalisue/fern-renderer-devicons.vim.git'
+    "Plug 'https://github.com/lambdalisue/fern-renderer-devicons.vim.git'
 
     " Add icons to your (N)vim
     Plug 'https://github.com/ryanoasis/vim-devicons'
@@ -248,6 +248,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/arcticicestudio/nord-vim.git'
     Plug 'https://github.com/altercation/vim-colors-solarized.git'
     Plug 'https://github.com/dracula/vim.git'
+    Plug 'https://github.com/ayu-theme/ayu-vim.git'
     Plug 'https://github.com/rakr/vim-one.git'
     Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
     Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'

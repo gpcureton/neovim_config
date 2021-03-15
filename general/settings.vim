@@ -18,7 +18,7 @@ set splitright                          " Vertical splits will automatically be 
 "set t_Co=256                            " Support 256 colors
 set scrolloff=8                         " Start scrolling when this number of lines from top/bottom of buffer
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=4                           " Insert 2 spaces for a tab
+set tabstop=4                           " Insert 4 spaces for a tab
 set softtabstop=4                       " Number of spaces that a <Tab> counts for while performing editing
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set signcolumn=yes
@@ -33,7 +33,7 @@ set laststatus=2                        " Always display the status line
 set cursorline                          " Enable highlighting of the current line
 set cursorcolumn                        " Enable highlighting of the current column
 set colorcolumn=80
-set nojoinspaces    " Prevents inserting two spaces after punctuation on a join (J)
+set nojoinspaces                        " Prevents inserting two spaces after punctuation on a join (J)
 "set background=dark                     " tell vim what the background color looks like
 set showtabline=0                       " Show tabline? 
 "set noshowmode                          " We don't need to see things like -- INSERT -- anymore
@@ -41,15 +41,15 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set noswapfile                          " Do not create a swap/backup file
 set updatetime=50                      " Faster completion
-set timeoutlen=100                      " By default timeoutlen is 1000 ms
+set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-    ""set clipboard=unnamedplus               " Copy paste between vim and everything else
-    ""set autochdir                           " Your working directory will always be the same as your working directory
+"set clipboard=unnamedplus               " Copy paste between vim and everything else
+"set autochdir                           " Your working directory will always be the same as your working directory
 set showcmd         " Show (partial) command in status line.
 "set showmatch       " Show matching brackets.
-    ""set ignorecase     " Do case insensitive matching
+"set ignorecase     " Do case insensitive matching
 "set smartcase       " Do smart case matching
-    ""set incsearch      " Incremental search
+"set incsearch      " Incremental search
 "set hlsearch        " Highlight searches , Ctrl-S is being captured to initiate a search
 set autowrite      " Automatically save before commands like :next and :make
 set tabpagemax=15   " Set the maximum number of tabpages in editor
