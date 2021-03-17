@@ -107,6 +107,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
 
+    " Asynchronous build and test dispatcher 
+    Plug 'https://github.com/tpope/vim-dispatch.git'
+
     " enable repeating supported plugin maps with '.' 
     Plug 'https://github.com/tpope/vim-repeat.git'
 
