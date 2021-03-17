@@ -6,6 +6,7 @@ source $HOME/.config/nvim/general/settings.vim
 
 "------------------------------ Key Mappings ---------------------------------
 source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/keys/navigation.vim
 
 "-------------------------- Colours and Highlighting -------------------------
 source $HOME/.config/nvim/colors/colors.vim

@@ -14,36 +14,7 @@ map <leader>r :source ~/.config/nvim/init.vim<CR>
 " Leaving set to '' results in using the default '\'
 let mapleader = ''
 
-" Some keymapping to handle buffer navigation
-":imap <C-b> :buffers<cr>i
-":nmap <C-b> :buffers<cr>
-":map <C-b> :buffers<cr>
-
-":imap <M-c> :buffer
-":nmap <M-c> :buffer
-":map <M-c> :buffer
-
-" Beware! C-[ can emulate the Esc key, the reverse might also be true. Trying
-" to hit Esc will result in :bnext or :bNext
-":nmap <C-[> :bNext<cr>
-":nmap <C-]> :bnext<cr>
-":map <C-[> :bNext<cr>
-":map <C-]> :bnext<cr>
-"
-:nmap <C-p> :bNext<cr>
-:nmap <C-n> :bnext<cr>
-:map <C-p> :bNext<cr>
-:map <C-n> :bnext<cr>
-
-"nnoremap <leader>h :wincmd h<CR>
-"nnoremap <leader>j :wincmd j<CR>
-"nnoremap <leader>k :wincmd k<CR>
-"nnoremap <leader>l :wincmd l<CR>
-
 nnoremap <leader>nh :nohlsearch<CR>
-
-
-
 
 "" Better nav for omnicomplete
 "inoremap <expr> <c-j> ("\<C-n>")
@@ -80,12 +51,6 @@ nnoremap <leader>nh :nohlsearch<CR>
 "" Better tabbing
 "vnoremap < <gv
 "vnoremap > >gv
-
-"" Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 "nnoremap <Leader>o o<Esc>^Da
 "nnoremap <Leader>O O<Esc>^Da

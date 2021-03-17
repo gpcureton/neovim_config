@@ -16,12 +16,8 @@ nnoremap <leader>fh :lua require('telescope.builtin').help_tags()<CR>
 
 nnoremap <leader>gc :lua require('telescope.builtin').git_commits()<CR>
 
-" E5108: Error executing lua : `goto_file_selection_split` is removed and no 
-" longer usable. Use `require('telescope.actions').select_` instead. Take a 
-" look at developers.md for more Information.
-
 " From The Primeagen. I think this helps feed results from Telescope into the
-" quickfix buffer, when they can be further manipulated.
+" quickfix buffer, where they can be further manipulated.
 
 lua << EOF
 local actions = require('telescope.actions')
@@ -39,19 +35,21 @@ require('telescope').setup {
     mappings = {
       i = {
         ["<C-x>"] = false,
-        -- ["<C-s>"] = actions.goto_file_selection_split,
-        --["<C-q>"] = actions.send_to_qflist,
-        --["<C-q>"] = actions.add_to_qflist,
-        --["<C-q>"] = actions.send_selected_to_qflist,
-        ["<C-q>"] = actions.add_selected_to_qflist,
+        -- ["<M-q>"] = actions.send_to_qflist,
+        -- ["<C-q>"] = actions.send_selected_to_qflist,
+        -- ["<C-q>"] = actions.add_to_qflist,
+        -- ["<M-q>"] = actions.add_selected_to_qflist,
+        ["<C-q>"] = actions.smart_send_to_qflist,
+        ["<M-q>"] = actions.smart_add_to_qflist,
       },
       n = {
         ["<C-x>"] = false,
-        -- ["<C-s>"] = actions.goto_file_selection_split,
-        --["<C-q>"] = actions.send_to_qflist,
-        --["<C-q>"] = actions.add_to_qflist,
-        --["<C-q>"] = actions.send_selected_to_qflist,
-        ["<C-q>"] = actions.add_selected_to_qflist,
+        -- ["<M-q>"] = actions.send_to_qflist,
+        -- ["<C-q>"] = actions.send_selected_to_qflist,
+        -- ["<C-q>"] = actions.add_to_qflist,
+        -- ["<M-q>"] = actions.add_selected_to_qflist,
+        ["<C-q>"] = actions.smart_send_to_qflist,
+        ["<M-q>"] = actions.smart_add_to_qflist,
       },
     }
   },
