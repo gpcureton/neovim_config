@@ -5,11 +5,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Navigating items in the quickfix list
-nnoremap <M-k> :cnext<CR>
-nnoremap <M-j> :cprev<CR>
+nnoremap <M-k> :cprev<CR>
+nnoremap <M-j> :cnext<CR>
 " Navigating items in the location list
-nnoremap <leader>j :lnext<CR>
 nnoremap <leader>k :lprev<CR>
+nnoremap <leader>j :lnext<CR>
 
 " Navigating items in the location list
 " Some keymapping to handle buffer navigation
