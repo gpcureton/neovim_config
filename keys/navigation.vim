@@ -39,7 +39,7 @@ nnoremap <leader>j :lnext<CR>
 "nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <C-q> :call ToggleQFList()<CR>
-nnoremap <C-l> :call ToggleLocList()<CR>
+nnoremap <M-l> :call ToggleLocList()<CR>
 
 let g:the_primeagen_qf = 1 " my edit
 let g:the_primeagen_qf_l = 0 " Local (location list)
