@@ -38,9 +38,11 @@ source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
 source $HOME/.config/nvim/plug-config/vimwiki.vim
-source $HOME/.config/nvim/plug-config/vim-signify.vim
+"source $HOME/.config/nvim/plug-config/vim-signify.vim
 source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/airline.vim
+
+luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 
 " Don't work (yet)
 "luafile $HOME/.config/nvim/lua/plugins/evilline.lua

@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/neovim/nvim-lspconfig.git'
     "Plug 'https://github.com/nvim-lua/completion-nvim.git'
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
+    Plug 'https://github.com/glepnir/lspsaga.nvim.git'
 
     " A (Neo)vim plugin for formatting code. 
     Plug 'https://github.com/sbdchd/neoformat.git'
@@ -114,7 +115,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/tpope/vim-repeat.git'
 
     " Show a diff using Vim its sign column.
-    Plug 'https://github.com/mhinz/vim-signify.git'
+    "Plug 'https://github.com/mhinz/vim-signify.git'
+
+    "  Git signs written in pure lua 
+    Plug 'https://github.com/lewis6991/gitsigns.nvim.git'
 
     " A git commit browser in Vim
     Plug 'https://github.com/junegunn/gv.vim'
