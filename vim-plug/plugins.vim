@@ -27,6 +27,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
 
+    " Nvim Treesitter configurations and abstraction layer
+    Plug 'https://github.com/nvim-treesitter/nvim-treesitter.git', {'do': ':TSUpdate'}
+    Plug 'https://github.com/nvim-treesitter/playground.git'
+
     " A (Neo)vim plugin for formatting code. 
     Plug 'https://github.com/sbdchd/neoformat.git'
 
@@ -42,10 +46,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Checkout branches and tags with fzf
     Plug 'https://github.com/stsewd/fzf-checkout.vim.git'
-
-    " Nvim Treesitter configurations and abstraction layer
-    Plug 'https://github.com/nvim-treesitter/nvim-treesitter.git', {'do': ':TSUpdate'}
-    Plug 'https://github.com/nvim-treesitter/playground.git'
 
     "  Enhanced in-file search for Vim
     Plug 'https://github.com/wincent/loupe.git'
@@ -69,9 +69,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Improved terminal navigation by The Primeagen
     Plug 'https://github.com/ThePrimeagen/harpoon.git'
 
-    " The dark powered file explorer implementation
-    Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
-
     " General purpose asynchronous tree viewer written in Pure Vim script 
     Plug 'https://github.com/lambdalisue/fern.vim.git'
     Plug 'https://github.com/lambdalisue/fern-git-status.vim.git'
@@ -86,6 +83,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " A file explorer tree for neovim written in lua 
     "Plug 'https://github.com/kyazdani42/nvim-tree.lua.git'
+
+    " The dark powered file explorer implementation
+    "Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
 
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
@@ -103,7 +103,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/easymotion/vim-easymotion.git'
 
     " Vim Space Controller
-    Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
+    "Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
 
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -114,9 +114,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " enable repeating supported plugin maps with '.' 
     Plug 'https://github.com/tpope/vim-repeat.git'
 
-    " Show a diff using Vim its sign column.
-    "Plug 'https://github.com/mhinz/vim-signify.git'
-
     "  Git signs written in pure lua 
     Plug 'https://github.com/lewis6991/gitsigns.nvim.git'
 
@@ -126,14 +123,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A Vim plugin for visually displaying indent levels in code
     Plug 'https://github.com/Yggdroot/indentLine.git'
 
-    " Neovim thin wrapper for GDB, LLDB, PDB and BashDB 
-    "Plug 'https://github.com/sakhnik/nvim-gdb.git'
-
     " Personal Wiki for Vim
     "Plug 'https://github.com/vimwiki/vimwiki.git'
 
     " The interactive scratchpad for hackers. 
-    "Plug 'https://github.com/metakirby5/codi.vim'
+    Plug 'https://github.com/metakirby5/codi.vim'
 
     " Airline
     Plug 'https://github.com/vim-airline/vim-airline.git'
@@ -148,19 +142,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'SirVer/ultisnips'
     "Plug 'https://github.com/honza/vim-snippets'
     Plug 'https://github.com/norcalli/snippets.nvim.git'
-
-    " Slim, Fast and Hackable Completion Framework for Neovim
-    "Plug 'https://github.com/ncm2/ncm2.git'
-    "Plug 'https://github.com/roxma/nvim-yarp.git'
-    " enable ncm2 for all buffers
-    "autocmd BufEnter * call ncm2#enable_for_buffer()
-
-
-    " NOTE: you need to install completion sources to get completions.
-    "Check
-    " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-    "Plug 'https://github.com/ncm2/ncm2-bufword'
-    "Plug 'https://github.com/ncm2/ncm2-path'
 
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
     Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
@@ -193,6 +174,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "-----------------
     " Plugin Graveyard
     "-----------------
+
+    " Show a diff using Vim its sign column.
+    "Plug 'https://github.com/mhinz/vim-signify.git'
 
     " Stable version of coc
     "Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}

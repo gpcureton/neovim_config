@@ -15,7 +15,7 @@ set t_Co=256
     "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "endif
 
-colorscheme one
+"colorscheme one
 "colorscheme Ubuntu
 "colorscheme atom-dark
 "colorscheme iceberg
@@ -23,10 +23,10 @@ colorscheme one
 "colorscheme dracula
 "colorscheme palenight
 "colorscheme gruvbox
-"let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_dark = 'soft'
 "let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_contrast_dark = 'hard'
-"colorscheme ayu 
+"let g:gruvbox_contrast_dark = 'hard'
+colorscheme ayu 
 "let ayucolor="light"
 "let ayucolor="mirage"
 let ayucolor="dark"

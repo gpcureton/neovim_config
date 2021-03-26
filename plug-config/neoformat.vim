@@ -14,4 +14,11 @@ let g:neoformat_basic_format_trim = 1
 "
 " Run all enabled formatters (by default Neoformat stops after the first formatter succeeds)
 "
-let g:neoformat_run_all_formatters = 0
+let g:neoformat_run_all_formatters = 1
+
+let g:neoformat_enabled_C = ['cgpc']
+let g:neoformat_C_cgpc = {
+            \ 'exe': 'clangd-format',
+            \ 'args': ['--style=Webkit']
+            \ }
+

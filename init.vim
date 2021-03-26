@@ -32,17 +32,16 @@ source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vim-maximizer.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
-source $HOME/.config/nvim/plug-config/ctrlspace.vim
+"source $HOME/.config/nvim/plug-config/ctrlspace.vim
 source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
-source $HOME/.config/nvim/plug-config/vimwiki.vim
-"source $HOME/.config/nvim/plug-config/vim-signify.vim
+"source $HOME/.config/nvim/plug-config/vimwiki.vim
+luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 
-luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 
 " Don't work (yet)
 "luafile $HOME/.config/nvim/lua/plugins/evilline.lua
@@ -51,6 +50,7 @@ luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 "luafile $HOME/.config/nvim/lua/plugins/galaxyline_kraftwerk28.lua
 "luafile $HOME/.config/nvim/lua/plugins/galaxyline_richin13.lua
 
+"source $HOME/.config/nvim/plug-config/vim-signify.vim
 "source $HOME/.config/nvim/plug-config/youcompleteme.vim
 "source $HOME/.config/nvim/plug-config/ctrlp.vim
 "source $HOME/.config/nvim/plug-config/taboo.vim
