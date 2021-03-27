@@ -52,7 +52,7 @@ set showcmd         " Show (partial) command in status line.
 "set incsearch      " Incremental search
 "set hlsearch        " Highlight searches , Ctrl-S is being captured to initiate a search
 set autowrite      " Automatically save before commands like :next and :make
-set tabpagemax=15   " Set the maximum number of tabpages in editor
+set tabpagemax=0   " Set the maximum number of tabpages in editor
 
 if has('diffopt')
     set diffopt+=algorithm:patience

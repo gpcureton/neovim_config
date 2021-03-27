@@ -26,6 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/nvim-lua/completion-nvim.git'
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
+    Plug 'https://github.com/onsails/lspkind-nvim.git'
 
     " Nvim Treesitter configurations and abstraction layer
     Plug 'https://github.com/nvim-treesitter/nvim-treesitter.git', {'do': ':TSUpdate'}
@@ -58,6 +59,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Maximizes and restores the current window in Vim. 
     Plug 'https://github.com/szw/vim-maximizer.git'
+
+    " The BClose Vim plugin for deleting a buffer without closing the window
+    Plug 'https://github.com/rbgrouleff/bclose.vim.git'
 
     " A multi-language debugging system for Vim
     Plug 'https://github.com/puremourning/vimspector.git'
