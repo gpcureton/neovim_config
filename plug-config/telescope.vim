@@ -62,16 +62,18 @@ require('telescope').setup {
 }
 require('telescope').load_extension('fzy_native')
 
--- local M = {}
--- M.git_branches = function() 
---     require("telescope.builtin").git_branches({
---         attach_mappings = function(prompt_bufnr, map) 
---             map('i', '<c-m>', actions.git_merge_branch)
---             map('n', '<c-m>', actions.git_merge_branch)
---             return true
---         end
---     })
--- end
-
-return M
+--local M = {}
+--M.git_branches = function() 
+--    require("telescope.builtin").git_branches({
+--        attach_mappings = function(prompt_bufnr, map) 
+--            map('i', '<C-m>', actions.git_merge_branch)
+--            map('n', '<C-m>', actions.git_merge_branch)
+--            map('i', '<C-r>', actions.git_rebase_branch)
+--            map('n', '<C-r>', actions.git_rebase_branch)
+--            return true
+--        end
+--    })
+--end
+--
+--return M
 EOF

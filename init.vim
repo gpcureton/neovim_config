@@ -16,31 +16,27 @@ source $HOME/.config/nvim/plug-config/startify.vim
 source $HOME/.config/nvim/plug-config/vim-session.vim
 source $HOME/.config/nvim/plug-config/nvim-lsp.vim
 source $HOME/.config/nvim/plug-config/nvim-compe.vim
+source $HOME/.config/nvim/plug-config/tree-sitter.vim
+source $HOME/.config/nvim/plug-config/neoformat.vim
 source $HOME/.config/nvim/plug-config/vim-snippets.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/fern.vim
-"source $HOME/.config/nvim/plug-config/nvim-tree.vim
 source $HOME/.config/nvim/plug-config/harpoon.vim
-source $HOME/.config/nvim/plug-config/tree-sitter.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
-source $HOME/.config/nvim/plug-config/neoformat.vim
-source $HOME/.config/nvim/plug-config/ctrlsf.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
 source $HOME/.config/nvim/plug-config/vim-maximizer.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/taglist.vim
-"source $HOME/.config/nvim/plug-config/ctrlspace.vim
-source $HOME/.config/nvim/plug-config/vim-commentary.vim
-source $HOME/.config/nvim/plug-config/easymotion.vim
+"source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
-"source $HOME/.config/nvim/plug-config/vimwiki.vim
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/airline.vim
+"source $HOME/.config/nvim/plug-config/vimwiki.vim
 
 
 " Don't work (yet)
@@ -50,6 +46,10 @@ source $HOME/.config/nvim/plug-config/airline.vim
 "luafile $HOME/.config/nvim/lua/plugins/galaxyline_kraftwerk28.lua
 "luafile $HOME/.config/nvim/lua/plugins/galaxyline_richin13.lua
 
+"source $HOME/.config/nvim/plug-config/easymotion.vim
+"source $HOME/.config/nvim/plug-config/ctrlsf.vim
+"source $HOME/.config/nvim/plug-config/ctrlspace.vim
+"source $HOME/.config/nvim/plug-config/nvim-tree.vim
 "source $HOME/.config/nvim/plug-config/vim-signify.vim
 "source $HOME/.config/nvim/plug-config/youcompleteme.vim
 "source $HOME/.config/nvim/plug-config/ctrlp.vim

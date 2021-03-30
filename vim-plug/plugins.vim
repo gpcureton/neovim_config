@@ -23,7 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Quickstart configurations for the Nvim LSP client 
     Plug 'https://github.com/neovim/nvim-lspconfig.git'
-    "Plug 'https://github.com/nvim-lua/completion-nvim.git'
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
     Plug 'https://github.com/onsails/lspkind-nvim.git'
@@ -37,9 +36,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " A modern Vim and neovim filetype plugin for LaTeX files.
     Plug 'https://github.com/lervag/vimtex.git'
-
-    " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
-    Plug 'https://github.com/dyng/ctrlsf.vim.git'
 
     " A command-line fuzzy finder 
     Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -85,12 +81,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/ryanoasis/vim-devicons'
     Plug 'https://github.com/kyazdani42/nvim-web-devicons.git'
 
-    " A file explorer tree for neovim written in lua 
-    "Plug 'https://github.com/kyazdani42/nvim-tree.lua.git'
-
-    " The dark powered file explorer implementation
-    "Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
-
     " Exuberant Ctags
     Plug 'https://github.com/vim-scripts/taglist.vim.git'
 
@@ -102,12 +92,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " surround.vim: quoting/parenthesizing made simple 
     Plug 'https://github.com/tpope/vim-surround.git'
-
-    " Vim motions on speed! 
-    Plug 'https://github.com/easymotion/vim-easymotion.git'
-
-    " Vim Space Controller
-    "Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
 
     " A Git wrapper so awesome, it should be illegal
     Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -178,6 +162,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "-----------------
     " Plugin Graveyard
     "-----------------
+
+    " Vim Space Controller
+    "Plug 'https://github.com/vim-ctrlspace/vim-ctrlspace.git'
+
+    " Vim motions on speed! 
+    "Plug 'https://github.com/easymotion/vim-easymotion.git'
+
+    " A file explorer tree for neovim written in lua 
+    "Plug 'https://github.com/kyazdani42/nvim-tree.lua.git'
+
+    " The dark powered file explorer implementation
+    "Plug 'https://github.com/Shougo/defx.nvim.git', { 'do': ':UpdateRemotePlugins' }
+
+    " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2 
+    "Plug 'https://github.com/dyng/ctrlsf.vim.git'
 
     " Show a diff using Vim its sign column.
     "Plug 'https://github.com/mhinz/vim-signify.git'
