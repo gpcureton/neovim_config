@@ -35,19 +35,11 @@ require('telescope').setup {
     mappings = {
       i = {
         ["<C-x>"] = false,
-        -- ["<M-q>"] = actions.send_to_qflist,
-        -- ["<C-q>"] = actions.send_selected_to_qflist,
-        -- ["<C-q>"] = actions.add_to_qflist,
-        -- ["<M-q>"] = actions.add_selected_to_qflist,
         ["<C-q>"] = actions.smart_send_to_qflist,
         ["<M-q>"] = actions.smart_add_to_qflist,
       },
       n = {
         ["<C-x>"] = false,
-        -- ["<M-q>"] = actions.send_to_qflist,
-        -- ["<C-q>"] = actions.send_selected_to_qflist,
-        -- ["<C-q>"] = actions.add_to_qflist,
-        -- ["<M-q>"] = actions.add_selected_to_qflist,
         ["<C-q>"] = actions.smart_send_to_qflist,
         ["<M-q>"] = actions.smart_add_to_qflist,
       },
@@ -61,19 +53,4 @@ require('telescope').setup {
   }
 }
 require('telescope').load_extension('fzy_native')
-
---local M = {}
---M.git_branches = function() 
---    require("telescope.builtin").git_branches({
---        attach_mappings = function(prompt_bufnr, map) 
---            map('i', '<C-m>', actions.git_merge_branch)
---            map('n', '<C-m>', actions.git_merge_branch)
---            map('i', '<C-r>', actions.git_rebase_branch)
---            map('n', '<C-r>', actions.git_rebase_branch)
---            return true
---        end
---    })
---end
---
---return M
 EOF

@@ -118,11 +118,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/metakirby5/codi.vim'
 
     " Airline
-    Plug 'https://github.com/vim-airline/vim-airline.git'
-    Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+    "Plug 'https://github.com/vim-airline/vim-airline.git'
+    "Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
     " neovim statusline plugin written in lua
     "Plug 'https://github.com/glepnir/galaxyline.nvim.git', {'branch': 'main'}
+
+    " A blazing fast and easy to configure neovim statusline written in pure lua.
+    Plug 'https://github.com/hoob3rt/lualine.nvim.git'
 
     " A Vim alignment plugin
     Plug 'https://github.com/junegunn/vim-easy-align'

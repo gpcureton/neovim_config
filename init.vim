@@ -35,7 +35,8 @@ source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 source $HOME/.config/nvim/plug-config/codi.vim
-source $HOME/.config/nvim/plug-config/airline.vim
+luafile $HOME/.config/nvim/lua/plugins/lualine.lua
+"source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/vimwiki.vim
 
 
