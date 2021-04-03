@@ -11,6 +11,14 @@ require('lualine').setup{
     --component_separators = {'', ''},
     icons_enabled = true,
   },
+  --tabline = {
+    --lualine_a = { },
+    --lualine_b = { {'branch', icon = ''} },
+    --lualine_c = { 'filename' },
+    --lualine_x = { },
+    --lualine_y = { },
+    --lualine_z = { },
+  --},
   sections = {
     lualine_a = {
         {
@@ -26,6 +34,20 @@ require('lualine').setup{
             color = { fg = '#ff6600' }
             --color = { fg = '#ffff00' }
             --color = { fg = '#00aa22' }
+        },
+        { 
+            'diff',
+            colored = true,
+            symbols = { added = ' ', modified = ' ', removed = ' '},
+            color_added = '#00ff00',
+            color_modified = '#36a3d9',
+            color_removed = '#ff0000',
+        },
+    },
+    lualine_c = {
+        {
+            'filename',
+            file_status = true
         },
         {
           'diagnostics',
@@ -43,12 +65,6 @@ require('lualine').setup{
           color_error = '#ff0000',
           color_warn = '#ffaa00',
           color_info = '#ffffff',
-        },
-    },
-    lualine_c = {
-        {
-            'filename',
-            file_status = true
         },
     },
     lualine_x = {
