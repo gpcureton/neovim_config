@@ -20,12 +20,7 @@ require('lualine').setup{
     --lualine_z = { },
   --},
   sections = {
-    lualine_a = {
-        {
-            'mode',
-            upper = true
-        }
-    },
+    lualine_a = { { 'mode', upper = true } },
     lualine_b = {
         {
             'branch',
