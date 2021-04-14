@@ -32,6 +32,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\[HEX=\%02
 set laststatus=2                        " Always display the status line
 set cursorline                          " Enable highlighting of the current line
 set cursorcolumn                        " Enable highlighting of the current column
+set guicursor=
 set colorcolumn=80
 set nojoinspaces                        " Prevents inserting two spaces after punctuation on a join (J)
 "set background=dark                     " tell vim what the background color looks like
