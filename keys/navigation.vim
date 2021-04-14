@@ -43,6 +43,10 @@ nnoremap <M-j> :cnext<CR>
 nnoremap <leader>k :lprev<CR>
 nnoremap <leader>j :lnext<CR>
 
+" Close the current buffer without closing the window.
+nnoremap <leader>bc :Bclose<CR>
+" Delete the current buffer, closing the window.
+nnoremap <leader>bd :bdelete<CR>
 
 " Some keymapping to handle buffer navigation
 :nmap <C-p> :bNext<cr>
