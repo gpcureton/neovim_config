@@ -69,6 +69,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Improved terminal navigation by The Primeagen
     Plug 'https://github.com/ThePrimeagen/harpoon.git'
 
+    " Working with git-worktree
+    Plug 'https://github.com/ThePrimeagen/git-worktree.nvim.git'
+
     " General purpose asynchronous tree viewer written in Pure Vim script 
     Plug 'https://github.com/lambdalisue/fern.vim.git'
     Plug 'https://github.com/lambdalisue/fern-git-status.vim.git'
@@ -158,9 +161,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/nvim-telescope/telescope-github.nvim.git'
     "Plug 'https://github.com/nvim-telescope/telescope-project.nvim.git'
     "Plug 'https://github.com/nvim-telescope/telescope-frecency.nvim.git'
-    "Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
-    "Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
     
+    "------------
+    " Syntax
+    "------------
+ 
+    "Plug 'https://github.com/tpope/vim-markdown'
+
+    "------------
+    " Color Schemes
+    "------------
+
+    Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
+    Plug 'https://github.com/cocopon/iceberg.vim.git'
+    Plug 'https://github.com/morhetz/gruvbox.git'
+    Plug 'https://github.com/arcticicestudio/nord-vim.git'
+    Plug 'https://github.com/altercation/vim-colors-solarized.git'
+    Plug 'https://github.com/dracula/vim.git'
+    Plug 'https://github.com/ayu-theme/ayu-vim.git'
+    Plug 'https://github.com/rakr/vim-one.git'
+    Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
+    Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'
 
     "-----------------
     " Plugin Graveyard
@@ -228,27 +251,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/skywind3000/asynctasks.vim.git'
     " Run Async Shell Commands in and output to the Quickfix Window
     "Plug 'https://github.com/skywind3000/asyncrun.vim.git'
-
-    "------------
-    " Syntax
-    "------------
- 
-    "Plug 'https://github.com/tpope/vim-markdown'
-
-    "------------
-    " Color Schemes
-    "------------
-
-    Plug 'https://github.com/gosukiwi/vim-atom-dark.git'
-    Plug 'https://github.com/cocopon/iceberg.vim.git'
-    Plug 'https://github.com/morhetz/gruvbox.git'
-    Plug 'https://github.com/arcticicestudio/nord-vim.git'
-    Plug 'https://github.com/altercation/vim-colors-solarized.git'
-    Plug 'https://github.com/dracula/vim.git'
-    Plug 'https://github.com/ayu-theme/ayu-vim.git'
-    Plug 'https://github.com/rakr/vim-one.git'
-    Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
-    Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'
-
 
 call plug#end()

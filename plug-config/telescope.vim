@@ -16,6 +16,8 @@ nnoremap <leader>fh :lua require('telescope.builtin').help_tags()<CR>
 
 nnoremap <leader>gc :lua require('telescope.builtin').git_commits()<CR>
 
+nnoremap <leader>vc :lua require('telescope').extensions.vimspector.configurations()<CR>
+
 " From The Primeagen. I think this helps feed results from Telescope into the
 " quickfix buffer, where they can be further manipulated.
 
@@ -53,4 +55,7 @@ require('telescope').setup {
   }
 }
 require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('media_files')
+require("telescope").load_extension("git_worktree")
+
 EOF

@@ -42,7 +42,8 @@ require('lualine').setup{
     lualine_c = {
         {
             'filename',
-            file_status = true
+            color = {fg = '#ffffff'},
+            file_status = true,
         },
         {
           'diagnostics',
@@ -78,7 +79,9 @@ require('lualine').setup{
     lualine_a = {  },
     lualine_b = {  },
     lualine_c = { 'filename' },
+    --lualine_c = { { 'filename', color = {fg = '#444444'} } },
     lualine_x = { 'location' },
+    --lualine_x = { {'location', color = {fg = '#444444'} } },
     lualine_y = {  },
     lualine_z = {   }
   },

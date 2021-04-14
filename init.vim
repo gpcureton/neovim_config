@@ -24,6 +24,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/fern.vim
 source $HOME/.config/nvim/plug-config/harpoon.vim
+luafile $HOME/.config/nvim/lua/plugins/git-worktree.lua
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
