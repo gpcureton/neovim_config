@@ -40,14 +40,6 @@ luafile $HOME/.config/nvim/lua/plugins/lualine.lua
 "source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/vimwiki.vim
 
-
-" Don't work (yet)
-"luafile $HOME/.config/nvim/lua/plugins/evilline.lua
-"luafile $HOME/.config/nvim/lua/plugins/galaxyline_mnabila.lua
-"luafile $HOME/.config/nvim/lua/plugins/galaxyline-config.lua
-"luafile $HOME/.config/nvim/lua/plugins/galaxyline_kraftwerk28.lua
-"luafile $HOME/.config/nvim/lua/plugins/galaxyline_richin13.lua
-
 "source $HOME/.config/nvim/plug-config/easymotion.vim
 "source $HOME/.config/nvim/plug-config/ctrlsf.vim
 "source $HOME/.config/nvim/plug-config/ctrlspace.vim
