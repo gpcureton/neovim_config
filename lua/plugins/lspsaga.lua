@@ -1,4 +1,4 @@
-local saga = require 'lspsaga'
+local saga = require('lspsaga')
 
 -- add your config value here
 -- default value
@@ -82,13 +82,11 @@ nnoremap <silent> gd <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
 nnoremap <silent> gd :Lspsaga preview_definition<CR>
 
 -- show
-nnoremap <silent><leader>cd <cmd>lua
-require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
+nnoremap <silent><leader>cd <cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
 
 nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
 -- only show diagnostic if cursor is over the area
-nnoremap <silent><leader>cc <cmd>lua
-require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
+nnoremap <silent><leader>cc <cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>
 
 -- jump diagnostic
 nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
