@@ -37,6 +37,7 @@ source $HOME/.config/nvim/plug-config/vim-fugitive.vim
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 source $HOME/.config/nvim/plug-config/codi.vim
 luafile $HOME/.config/nvim/lua/plugins/lualine.lua
+luafile $HOME/.config/nvim/lua/plugins/symbols-outline.lua
 "source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/vimwiki.vim
 

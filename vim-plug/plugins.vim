@@ -26,6 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
     Plug 'https://github.com/onsails/lspkind-nvim.git'
+    Plug 'https://github.com/simrat39/symbols-outline.nvim.git'
 
     " Nvim Treesitter configurations and abstraction layer
     Plug 'https://github.com/nvim-treesitter/nvim-treesitter.git', {'do': ':TSUpdate'}
