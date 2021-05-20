@@ -10,7 +10,9 @@ nnoremap <C-l> <C-w>l
 
 " Quickfix and Location lists
 nnoremap <C-q> :call ToggleQFList()<CR>
+nnoremap <leader>qc :cexpr[]<CR>
 nnoremap <M-l> :call ToggleLocList()<CR>
+nnoremap <leader>lc :lexpr[]<CR>
 
 let g:the_primeagen_qf = 1 " my edit
 let g:the_primeagen_qf_l = 0 " Local (location list)
