@@ -7,7 +7,6 @@ nnoremap <leader>te :Telescope
 
 " Using lua functions
 nnoremap <Leader>f :lua require('telescope.builtin').find_files()<CR>
-nnoremap <leader>p :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>fb :lua require('telescope.builtin').buffers()<CR>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
@@ -15,7 +14,12 @@ nnoremap <leader>fw :lua require('telescope.builtin').grep_string { search = vim
 nnoremap <leader>fh :lua require('telescope.builtin').help_tags()<CR>
 nnoremap <leader>fe :lua require('telescope.builtin').file_browser({cwd = vim.fn.expand("%:p:h")})<CR>
 
-nnoremap <leader>gc :lua require('telescope.builtin').git_commits()<CR>
+nnoremap <leader>p :lua require('telescope.builtin').git_files()<CR>
+nnoremap <leader>gcr :lua require('telescope.builtin').git_commits()<CR>
+nnoremap <leader>gcb :lua require('telescope.builtin').git_bcommits()<CR>
+nnoremap <leader>gw :lua require('telescope.builtin').git_worktree()
+nnoremap <leader>gst :lua require('telescope.builtin').git_stash()<CR>
+nnoremap <leader>gb :lua require('telescope.builtin').git_branches()<CR>
 
 nnoremap <leader>vc :lua require('telescope').extensions.vimspector.configurations()<CR>
 
@@ -26,6 +30,18 @@ lua << EOF
 local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
+    prompt_position = "top",
+    selection_strategy = "reset",
+    sorting_strategy = "ascending",
+    layout_strategy = "horizontal",
+    layout_defaults = {
+      horizontal = {
+        mirror = false,
+      },
+      vertical = {
+        mirror = false,
+      },
+    },
     file_sorter = require('telescope.sorters').get_fzy_sorter,
     prompt_prefix = '  ',
     selection_caret = ' ',
