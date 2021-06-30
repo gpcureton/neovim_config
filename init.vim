@@ -1,3 +1,5 @@
+set path+=**
+    "Plug 'https://github.com/gpcureton/telescope.nvim.git'
 "-------------------------------- Plugins (VimPlug) --------------------------
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
@@ -24,7 +26,6 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/fzf-checkout.vim
 source $HOME/.config/nvim/plug-config/fern.vim
 source $HOME/.config/nvim/plug-config/harpoon.vim
-luafile $HOME/.config/nvim/lua/plugins/git-worktree.lua
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/undotree.vim
@@ -34,12 +35,11 @@ source $HOME/.config/nvim/plug-config/taglist.vim
 "source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/indentLine.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive.vim
-luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 source $HOME/.config/nvim/plug-config/codi.vim
-luafile $HOME/.config/nvim/lua/plugins/lualine.lua
-luafile $HOME/.config/nvim/lua/plugins/symbols-outline.lua
 "source $HOME/.config/nvim/plug-config/airline.vim
 "source $HOME/.config/nvim/plug-config/vimwiki.vim
+
+lua require("core")
 
 "source $HOME/.config/nvim/plug-config/easymotion.vim
 "source $HOME/.config/nvim/plug-config/ctrlsf.vim

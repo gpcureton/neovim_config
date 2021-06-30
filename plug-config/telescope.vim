@@ -1,3 +1,5 @@
+lua require("core")
+"
 " Find files using Telescope command-line sugar.
 nnoremap <leader>te :Telescope
 "nnoremap <leader>f <cmd>Telescope find_files<cr>
@@ -17,62 +19,66 @@ nnoremap <leader>fe :lua require('telescope.builtin').file_browser({cwd = vim.fn
 nnoremap <leader>p :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>gcr :lua require('telescope.builtin').git_commits()<CR>
 nnoremap <leader>gcb :lua require('telescope.builtin').git_bcommits()<CR>
-nnoremap <leader>gw :lua require('telescope.builtin').git_worktree()
 nnoremap <leader>gst :lua require('telescope.builtin').git_stash()<CR>
 nnoremap <leader>gb :lua require('telescope.builtin').git_branches()<CR>
+
+nnoremap <leader>gw :lua require('telescope').extensions.git_worktree.git_worktrees()<CR>
+nnoremap <leader>gwc :lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>
 
 nnoremap <leader>vc :lua require('telescope').extensions.vimspector.configurations()<CR>
 
 " From The Primeagen. I think this helps feed results from Telescope into the
 " quickfix buffer, where they can be further manipulated.
 
-lua << EOF
-local actions = require('telescope.actions')
-require('telescope').setup {
-  defaults = {
-    prompt_position = "top",
-    selection_strategy = "reset",
-    sorting_strategy = "ascending",
-    layout_strategy = "horizontal",
-    layout_defaults = {
-      horizontal = {
-        mirror = false,
-      },
-      vertical = {
-        mirror = false,
-      },
-    },
-    file_sorter = require('telescope.sorters').get_fzy_sorter,
-    prompt_prefix = '  ',
-    selection_caret = ' ',
-    color_devicons = true,
+"lua require("plugins.telescope")
 
-    file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
-    grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
-    qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
+"lua << EOF
+"local actions = require('telescope.actions')
+"require('telescope').setup {
+  "defaults = {
+    "prompt_position = "top",
+    "selection_strategy = "reset",
+    "sorting_strategy = "ascending",
+    "layout_strategy = "horizontal",
+    "layout_defaults = {
+      "horizontal = {
+        "mirror = false,
+      "},
+      "vertical = {
+        "mirror = false,
+      "},
+    "},
+    "file_sorter = require('telescope.sorters').get_fzy_sorter,
+    "prompt_prefix = '  ',
+    "selection_caret = ' ',
+    "color_devicons = true,
 
-    mappings = {
-      i = {
-        ["<C-x>"] = false,
-        ["<C-q>"] = actions.smart_send_to_qflist,
-        ["<M-q>"] = actions.smart_add_to_qflist,
-      },
-      n = {
-        ["<C-x>"] = false,
-        ["<C-q>"] = actions.smart_send_to_qflist,
-        ["<M-q>"] = actions.smart_add_to_qflist,
-      },
-    }
-  },
-  extensions = {
-      fzy_native = {
-          override_generic_sorter = false,
-          override_file_sorter = true,
-      }
-  }
-}
-require('telescope').load_extension('fzy_native')
-require('telescope').load_extension('media_files')
-require("telescope").load_extension("git_worktree")
+    "file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
+    "grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
+    "qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
 
-EOF
+    "mappings = {
+      "i = {
+        "["<C-x>"] = false,
+        "["<C-q>"] = actions.smart_send_to_qflist,
+        "["<M-q>"] = actions.smart_add_to_qflist,
+      "},
+      "n = {
+        "["<C-x>"] = false,
+        "["<C-q>"] = actions.smart_send_to_qflist,
+        "["<M-q>"] = actions.smart_add_to_qflist,
+      "},
+    "}
+  "},
+  "extensions = {
+      "fzy_native = {
+          "override_generic_sorter = false,
+          "override_file_sorter = true,
+      "}
+  "}
+"}
+"require('telescope').load_extension('fzy_native')
+"require('telescope').load_extension('media_files')
+"require("telescope").load_extension("git_worktree")
+
+"EOF

@@ -1,0 +1,6 @@
+require("core.telescope")
+require("core.git-worktree")
+require("core.gitsigns")
+require("core.symbols-outline")
+require("core.lualine")
+--require("core.galaxyline-config")
