@@ -20,8 +20,6 @@ nmap <silent> ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 lua << EOF 
--- local on_attach = require'completion'.on_attach
-
 vim.fn.sign_define("LspDiagnosticsSignError",
                   {texthl = "LspDiagnosticsSignError", text = "", numhl = "LspDiagnosticsSignError"})
                   --{texthl = "LspDiagnosticsSignError", text = "", numhl = "LspDiagnosticsSignError"})
@@ -48,7 +46,8 @@ require'lspconfig'.fortls.setup{
     on_attach=on_attach
 }
 
-require'lspconfig'.pyls.setup{
+-- require'lspconfig'.pyls.setup{
+require'lspconfig'.pylsp.setup{
     on_attach=on_attach
 }
 
