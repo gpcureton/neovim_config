@@ -148,6 +148,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/voldikss/vim-floaterm.git'
     Plug 'https://github.com/voldikss/fzf-floaterm.git'
 
+    " A neovim lua plugin to help easily manage multiple terminal windows
+    Plug 'https://github.com/akinsho/nvim-toggleterm.lua.git'
+
     "Find, Filter, Preview, Pick. All lua, all the time.
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
