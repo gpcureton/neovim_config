@@ -151,6 +151,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A neovim lua plugin to help easily manage multiple terminal windows
     Plug 'https://github.com/akinsho/nvim-toggleterm.lua.git'
 
+    " A pretty diagnostics, references, telescope results, quickfix and
+    " location list to help you solve all the trouble your code is causing.
+    Plug 'https://github.com/folke/trouble.nvim.git'
+
     "Find, Filter, Preview, Pick. All lua, all the time.
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
