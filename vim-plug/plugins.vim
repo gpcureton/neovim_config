@@ -168,11 +168,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-telescope/telescope-fzy-native.nvim.git', {'do': 'make'}
     Plug 'https://github.com/nvim-telescope/telescope-fzf-writer.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-snippets.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
+    Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
+    "
     "Plug 'https://github.com/nvim-telescope/telescope-github.nvim.git'
     "Plug 'https://github.com/nvim-telescope/telescope-project.nvim.git'
     "Plug 'https://github.com/nvim-telescope/telescope-frecency.nvim.git'
-    Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
-    Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
     
     "------------
     " Syntax
