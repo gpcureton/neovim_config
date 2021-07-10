@@ -155,6 +155,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " location list to help you solve all the trouble your code is causing.
     Plug 'https://github.com/folke/trouble.nvim.git'
 
+    " Highlight, list and search todo comments in your projects
+    Plug 'https://github.com/folke/todo-comments.nvim.git'
+
     "Find, Filter, Preview, Pick. All lua, all the time.
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
