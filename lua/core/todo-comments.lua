@@ -12,7 +12,7 @@ require("todo-comments").setup {
     WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
     PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
     NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
-    DEBUG = { icon = " ", color = "warning", alt = { "DEBUG GPC" } },
+    DEBUG = { icon = " ", color = "warning", alt = { "DEBUGGPC","DEBUG_GPC","DEBUG-GPC","DEBUG GPC" } },
   },
   merge_keywords = true, -- when true, custom keywords will be merged with the defaults
 }

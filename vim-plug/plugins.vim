@@ -162,7 +162,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
     Plug 'https://github.com/nvim-telescope/telescope.nvim.git'
-    Plug 'https://github.com/nvim-telescope/telescope-menu.nvim.git'
+    "Plug 'https://github.com/nvim-telescope/telescope-menu.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-symbols.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-bibtex.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-fzy-native.nvim.git', {'do': 'make'}
