@@ -1,5 +1,4 @@
 set path+=**
-    "Plug 'https://github.com/gpcureton/telescope.nvim.git'
 "-------------------------------- Plugins (VimPlug) --------------------------
 source $HOME/.config/nvim/vim-plug/plugins.vim
 

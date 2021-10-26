@@ -1,12 +1,14 @@
 require('lualine').setup{
   options = {
     --theme = 'gruvbox',
-    theme = 'ayu_dark',
+    --theme = 'ayu_dark',
     --theme = 'ayu_mirage',
     --theme = 'powerline',
+    --theme = 'powerline_dark',
     --theme = 'onedark',
-    section_separators = {'', ''},
-    component_separators = {'', ''},
+    theme = 'OceanicNext',
+    component_separators = {left = '', right = ''},
+    section_separators = {left = '', right = ''},
     --section_separators = {'', ''},
     --component_separators = {'', ''},
     icons_enabled = true,
@@ -85,5 +87,5 @@ require('lualine').setup{
     lualine_y = {  },
     lualine_z = {   }
   },
-  extensions = { 'fzf', 'fugitive', 'quickfix' }
+  extensions = { 'fern', 'fzf', 'fugitive', 'quickfix' }
 }

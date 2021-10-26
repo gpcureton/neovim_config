@@ -24,6 +24,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Quickstart configurations for the Nvim LSP client 
     Plug 'https://github.com/neovim/nvim-lspconfig.git'
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
+    "Plug 'https://github.com/hrsh7th/nvim-cmp.git'
+
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
     Plug 'https://github.com/onsails/lspkind-nvim.git'
     Plug 'https://github.com/simrat39/symbols-outline.nvim.git'
@@ -81,6 +83,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/lambdalisue/glyph-palette.vim.git'
     "Plug 'https://github.com/lambdalisue/fern-renderer-devicons.vim.git'
 
+    " A generic and modular lua sidebar for Neovim
+    Plug 'https://github.com/GustavoKatel/sidebar.nvim.git'
+
     " Add icons to your (N)vim
     Plug 'https://github.com/ryanoasis/vim-devicons'
     Plug 'https://github.com/kyazdani42/nvim-web-devicons.git'
@@ -121,6 +126,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " The interactive scratchpad for hackers. 
     Plug 'https://github.com/metakirby5/codi.vim'
 
+    " Interactive real time neovim scratchpad for embedded lua engine - type and watch!
+    Plug 'https://github.com/rafcamlet/nvim-luapad.git'
+
     " Airline
     "Plug 'https://github.com/vim-airline/vim-airline.git'
     "Plug 'https://github.com/vim-airline/vim-airline-themes.git'
@@ -136,7 +144,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "Plug 'SirVer/ultisnips'
     "Plug 'https://github.com/honza/vim-snippets'
-    Plug 'https://github.com/norcalli/snippets.nvim.git'
+    "Plug 'https://github.com/norcalli/snippets.nvim.git'
+    "Plug 'https://github.com/L3MON4D3/LuaSnip.git'
+    "Plug 'https://github.com/saadparwaiz1/cmp_luasnip.git'
 
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
     Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
