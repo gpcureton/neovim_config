@@ -1,3 +1,4 @@
+vim.notify = require("notify")
 --require("core.completion")
 require("core.telescope")
 require("core.git-worktree")

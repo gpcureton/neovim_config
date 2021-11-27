@@ -24,7 +24,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Quickstart configurations for the Nvim LSP client 
     Plug 'https://github.com/neovim/nvim-lspconfig.git'
     Plug 'https://github.com/hrsh7th/nvim-compe.git'
+
     "Plug 'https://github.com/hrsh7th/nvim-cmp.git'
+    "Plug 'https://github.com/hrsh7th/cmp-nvim-lsp'
+    "Plug 'https://github.com/hrsh7th/cmp-buffer'
+    "Plug 'https://github.com/hrsh7th/cmp-path'
+    "Plug 'https://github.com/hrsh7th/cmp-cmdline'
+    "Plug 'https://github.com/hrsh7th/nvim-cmp'
+
+    "Plug 'https://github.com/L3MON4D3/LuaSnip'
+    "Plug 'https://github.com/saadparwaiz1/cmp_luasnip'
+
 
     Plug 'https://github.com/glepnir/lspsaga.nvim.git'
     Plug 'https://github.com/onsails/lspkind-nvim.git'
@@ -142,12 +152,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " A Vim alignment plugin
     Plug 'https://github.com/junegunn/vim-easy-align'
 
-    "Plug 'SirVer/ultisnips'
-    "Plug 'https://github.com/honza/vim-snippets'
-    "Plug 'https://github.com/norcalli/snippets.nvim.git'
-    "Plug 'https://github.com/L3MON4D3/LuaSnip.git'
-    "Plug 'https://github.com/saadparwaiz1/cmp_luasnip.git'
-
     " vim-be-good is a nvim plugin designed to make you better at Vim Movements. 
     Plug 'https://github.com/ThePrimeagen/vim-be-good.git'
 
@@ -172,7 +176,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-lua/popup.nvim'
     Plug 'https://github.com/nvim-lua/plenary.nvim'
     Plug 'https://github.com/nvim-telescope/telescope.nvim.git'
-    "Plug 'https://github.com/nvim-telescope/telescope-menu.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-symbols.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-bibtex.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-fzy-native.nvim.git', {'do': 'make'}
@@ -180,6 +183,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/nvim-telescope/telescope-snippets.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-media-files.nvim.git'
     Plug 'https://github.com/nvim-telescope/telescope-vimspector.nvim.git'
+    Plug 'https://github.com/AckslD/nvim-neoclip.lua.git'
+    Plug 'https://github.com/rcarriga/nvim-notify.git'
     "
     "Plug 'https://github.com/nvim-telescope/telescope-github.nvim.git'
     "Plug 'https://github.com/nvim-telescope/telescope-project.nvim.git'
@@ -205,6 +210,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/rakr/vim-one.git'
     Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
     Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'
+    Plug 'https://github.com/vim-conf-live/vimconflive2021-colorscheme.git'
 
     "-----------------
     " Plugin Graveyard
