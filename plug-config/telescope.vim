@@ -25,4 +25,28 @@ nnoremap <leader>gb :lua require('telescope.builtin').git_branches()<CR>
 nnoremap <leader>gw :lua require('telescope').extensions.git_worktree.git_worktrees()<CR>
 nnoremap <leader>gwc :lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>
 
+" Creates a worktree.  Requires the path, branch name, and the upstream
+" Example:
+":lua require("git-worktree").create_worktree("feat-69", "master", "origin")
+
+" switches to an existing worktree.  Requires the path name
+" Example:
+":lua require("git-worktree").switch_worktree("feat-69")
+
+" deletes to an existing worktree.  Requires the path name
+" Example:
+":lua require("git-worktree").delete_worktree("feat-69")
+
+" Switch and Delete worktrees
+
+":lua require('telescope').extensions.git_worktree.git_worktrees()
+" <Enter> - switches to that worktree
+" <c-d> - deletes that worktree
+" <c-D> - force deletes that worktree
+
+" Create a worktree
+" To bring up the telescope window to create a new worktree run the following
+
+":lua require('telescope').extensions.git_worktree.create_git_worktree()
+
 nnoremap <leader>vc :lua require('telescope').extensions.vimspector.configurations()<CR>

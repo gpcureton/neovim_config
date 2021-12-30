@@ -36,7 +36,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'https://github.com/saadparwaiz1/cmp_luasnip'
 
 
-    Plug 'https://github.com/glepnir/lspsaga.nvim.git'
+    "Plug 'https://github.com/glepnir/lspsaga.nvim.git'
     Plug 'https://github.com/onsails/lspkind-nvim.git'
     Plug 'https://github.com/simrat39/symbols-outline.nvim.git'
 
@@ -211,6 +211,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'https://github.com/drewtempelmeyer/palenight.vim.git'
     Plug 'https://github.com/cooper-anderson/glowbeam.vim.git'
     Plug 'https://github.com/vim-conf-live/vimconflive2021-colorscheme.git'
+    Plug 'https://github.com/folke/tokyonight.nvim', { 'branch': 'main' }
 
     "-----------------
     " Plugin Graveyard
