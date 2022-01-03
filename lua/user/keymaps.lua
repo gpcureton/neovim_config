@@ -43,7 +43,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -57,10 +57,24 @@ keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "J", ":move '>+1<CR>gv=gv", opts)
+keymap("x", "K", ":move '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Make Y behave like the rest of the capital letters...
+keymap("n", "Y", 'y$', opts)
+
+-- Keeping things centered...
+keymap("n", "n", 'nzzzv', opts)
+keymap("n", "N", 'Nzzzv', opts)
+keymap("n", "J", 'mzJ`z', opts)
+
+-- Perform Undo operations at these breakpoints...
+keymap("i", ",", ",<C-g>u", opts)
+keymap("i", ".", ".<C-g>u", opts)
+keymap("i", "!", "!<C-g>u", opts)
+keymap("i", "?", "?<C-g>u", opts)
 
 -- Terminal --
 -- Better terminal navigation
