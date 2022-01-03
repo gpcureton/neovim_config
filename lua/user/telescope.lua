@@ -143,6 +143,9 @@ telescope.setup {
 -- <leader>rl
 -- require("telescope").load_extension "repo"
 
+-- telescope.extensions.notify.notify(<opts>)
+telescope.load_extension('notify')
+
 -- https://github.com/ahmedkhalf/project.nvim
 telescope.load_extension('projects')
 
@@ -158,6 +161,7 @@ telescope.load_extension("neoclip")
 keymap("n", "<leader>te", ":Telescope ", opts)
 
 -- Using lua functions
+keymap("n", "<Leader>n", ":lua require('telescope').extensions.notify.notify()<CR>", opts)
 keymap("n", "<Leader>f", ":lua require('telescope.builtin').find_files()<CR>", opts)
 -- keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers()<CR>", opts)
 keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>", opts)
