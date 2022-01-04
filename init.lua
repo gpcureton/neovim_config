@@ -1,12 +1,3 @@
-local status_ok, notify = pcall(require, "notify")
-if status_ok then
-    vim.notify = notify
-    notify("The Notify plugin has loaded correctly.")
-else
-	return
-end
-
-
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
