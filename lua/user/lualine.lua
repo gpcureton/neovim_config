@@ -14,7 +14,7 @@ local diagnostics = {
 	symbols = { error = " ", warn = " " },
 	colored = true,
 	update_in_insert = false,
-	always_visible = true,
+	always_visible = false,
     color_error = '#ff0000',
     color_warn = '#ffaa00',
     color_info = '#ffffff',
@@ -29,7 +29,7 @@ local diff = {
     color_added = '#00ff00',
     color_modified = '#36a3d9',
     color_removed = '#ff0000',
-	always_visible = true,
+	always_visible = false,
     cond = hide_in_width
 }
 
