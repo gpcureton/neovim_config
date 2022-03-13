@@ -64,7 +64,7 @@ telescope.setup {
                 -- ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                 ["<M-q>"] = actions.smart_add_to_qflist,
                 ["<C-l>"] = actions.complete_tag,
-                ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
+                ["<C-?>"] = actions.which_key, -- keys from pressing <C-/>
             },
 
             n = {
@@ -129,7 +129,7 @@ telescope.setup {
 -- require("telescope").load_extension "ui-select"
 
 -- https://github.com/nvim-telescope/telescope-fzf-native.nvim#telescope-fzf-nativenvim
--- require("telescope").load_extension "fzf"
+require("telescope").load_extension "fzf"
 
 -- https://github.com/dhruvmanila/telescope-bookmarks.nvim
 -- <space>b
@@ -154,7 +154,7 @@ telescope.load_extension('projects')
 telescope.load_extension("neoclip")
 
 -- GitHub CLI → local version
--- require("telescope").load_extension "gh"
+require("telescope").load_extension "gh"
 
 -- Telescope keymaps
 -- keymap("n", "<leader>te", ":Telescope<CR>", opts)
@@ -179,3 +179,12 @@ keymap("n", "<leader>gb", ":lua require('telescope.builtin').git_branches()<CR>"
 --
 keymap("n", "<leader>gw", ":lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", opts)
 keymap("n", "<leader>gwc", ":lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>", opts)
+
+local fuzzy_buf_opt = require('telescope.themes').get_dropdown({height=10, previewer=false})
+keymap("n", "<leader>ffb", ":lua require('telescope.builtin').current_buffer_fuzzy_find(fuzzy_buf_opt)<CR>", opts)
+
+
+-- mappings.curr_buf = function()
+--   local opt = require('telescope.themes').get_dropdown({height=10, previewer=false})
+--   require('telescope.builtin').current_buffer_fuzzy_find(opt)
+-- end

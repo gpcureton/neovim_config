@@ -76,7 +76,7 @@ return packer.startup(function(use)
     }
     use 'ryanoasis/vim-devicons' -- Add icons to your (N)vim
     --use 'https://github.com/GustavoKatel/sidebar.nvim.git' -- A generic and modular lua sidebar for Neovim
-    use 'https://github.com/simrat39/symbols-outline.nvim.git'
+    -- use 'https://github.com/simrat39/symbols-outline.nvim.git'
     --use 'https://github.com/lambdalisue/nerdfont.vim.git'
     --use 'https://github.com/lambdalisue/glyph-palette.vim.git'
 
@@ -113,10 +113,10 @@ return packer.startup(function(use)
     use 'rcarriga/nvim-notify' -- A fancy, configurable, notification manager for NeoVim
     use 'vim-scripts/taglist.vim' -- Exuberant Ctags
     --use 'tpope/vim-repeat' -- enable repeating supported plugin maps with '.'
-    --use 'mbbill/undotree' -- The undo history visualizer for VIM
+    use 'mbbill/undotree' -- The undo history visualizer for VIM
     use 'szw/vim-maximizer' -- Maximizes and restores the current window in Vim.
     use 'wincent/loupe' --  Enhanced in-file search for Vim
-    --use 'dbeniamine/cheat.sh-vim' -- A vim plugin to access cheat.sh sheets
+    use 'dbeniamine/cheat.sh-vim' -- A vim plugin to access cheat.sh sheets
     use "folke/which-key.nvim" -- WhichKey is a lua plugin that displays a popup with possible keybindings of the command you started typing
     use 'folke/todo-comments.nvim' -- Highlight, list and search todo comments in your projects
     use 'folke/trouble.nvim' -- A pretty diagnostics, references, telescope results, quickfix and location list
@@ -150,7 +150,7 @@ return packer.startup(function(use)
     use 'ThePrimeagen/git-worktree.nvim' -- Working with git-worktree
     use "lewis6991/gitsigns.nvim" --  Git signs written in pure lua
     use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
-    use 'sbdchd/neoformat' -- A (Neo)vim plugin for formatting code.
+    -- use 'sbdchd/neoformat' -- A (Neo)vim plugin for formatting code.
     --use 'puremourning/vimspector' -- A multi-language debugging system for Vim
     --use 'junegunn/gv.vim' -- A git commit browser in Vim
     --use 'airblade/vim-rooter' -- Changes Vim working directory to project root.
@@ -169,6 +169,7 @@ return packer.startup(function(use)
     use "hrsh7th/nvim-cmp" -- The completion plugin
     use "hrsh7th/cmp-buffer" -- buffer completions
     use "hrsh7th/cmp-path" -- path completions
+    use "kdheepak/cmp-latex-symbols" -- latex symbol support
     use "hrsh7th/cmp-cmdline" -- cmdline completions
     use "saadparwaiz1/cmp_luasnip" -- snippet completions
     use "hrsh7th/cmp-nvim-lsp"
@@ -190,15 +191,25 @@ return packer.startup(function(use)
     use "nvim-telescope/telescope.nvim"
     use 'nvim-telescope/telescope-symbols.nvim'
     use 'nvim-telescope/telescope-bibtex.nvim'
-    --use 'nvim-telescope/telescope-fzy-native.nvim', {'do': 'make'}
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     --use 'nvim-telescope/telescope-fzf-writer.nvim'
     --use 'nvim-telescope/telescope-snippets.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
     --use 'nvim-telescope/telescope-vimspector.nvim'
-    --
-    --use 'nvim-telescope/telescope-github.nvim'
+    use 'nvim-telescope/telescope-github.nvim'
     --use 'nvim-telescope/telescope-project.nvim'
     --use 'nvim-telescope/telescope-frecency.nvim'
+    use {
+      'pwntester/octo.nvim',
+      requires = {
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim',
+        'kyazdani42/nvim-web-devicons',
+      },
+      config = function ()
+        require"octo".setup()
+      end
+    }
 
 
     -- Treesitter
@@ -208,6 +219,10 @@ return packer.startup(function(use)
     }
     use 'nvim-treesitter/playground' -- Nvim Treesitter configurations and abstraction layer
     use "JoosepAlviste/nvim-ts-context-commentstring"
+
+    -- Personal Wiki for Vim
+    use 'https://github.com/vimwiki/vimwiki.git'
+    use 'https://github.com/tpope/vim-markdown'
 
     ---------------------- Old / Unused Plugins ------------------------------
 
@@ -219,13 +234,9 @@ return packer.startup(function(use)
     -- Checkout branches and tags with fzf
     --use 'https://github.com/stsewd/fzf-checkout.vim.git'
 
-    -- Personal Wiki for Vim
-    --use 'https://github.com/vimwiki/vimwiki.git'
-
     -- vim-be-good is a nvim plugin designed to make you better at Vim Movements.
     --use 'https://github.com/ThePrimeagen/vim-be-good.git'
 
-    --use 'https://github.com/tpope/vim-markdown'
 
     ---------------------- Old / Unused Plugins ------------------------------
 
