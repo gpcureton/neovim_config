@@ -142,7 +142,7 @@ return packer.startup(function(use)
     --use 'https://github.com/akinsho/nvim-toggleterm.lua.git' -- A neovim lua plugin to help easily manage multiple terminal windows
     --use 'https://github.com/norcalli/nvim-terminal.lua.git' -- A high performance filetype mode for Neovim which leverages
                                                               -- conceal and highlights your buffer with the correct color codes.
-    --use 'https://github.com/ThePrimeagen/harpoon.git' -- Improved terminal navigation by The Primeagen
+    use 'https://github.com/ThePrimeagen/harpoon.git' -- Improved terminal navigation by The Primeagen
 
     -- >> Git, and other development plugins <<--
 
@@ -150,6 +150,8 @@ return packer.startup(function(use)
     use 'ThePrimeagen/git-worktree.nvim' -- Working with git-worktree
     use "lewis6991/gitsigns.nvim" --  Git signs written in pure lua
     use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through
+                                                                         -- diffs for all modified files for any git rev.
     -- use 'sbdchd/neoformat' -- A (Neo)vim plugin for formatting code.
     --use 'puremourning/vimspector' -- A multi-language debugging system for Vim
     --use 'junegunn/gv.vim' -- A git commit browser in Vim
