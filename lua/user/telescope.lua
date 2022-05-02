@@ -6,13 +6,8 @@ end
 local opts = { noremap = true, silent = true }
 
 -- Shorten function name
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 local actions = require "telescope.actions"
-
--- Shorten function name
--- local opts = { noremap = true, silent = true }
--- local keymap = vim.api.nvim_set_keymap
--- keymap("n", "<S-l>", ":bnext<CR>", opts)
 
 telescope.setup {
     defaults = {
