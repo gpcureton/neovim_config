@@ -76,7 +76,7 @@ return packer.startup(function(use)
     }
     use 'ryanoasis/vim-devicons' -- Add icons to your (N)vim
     --use 'https://github.com/GustavoKatel/sidebar.nvim.git' -- A generic and modular lua sidebar for Neovim
-    -- use 'https://github.com/simrat39/symbols-outline.nvim.git'
+    use 'https://github.com/simrat39/symbols-outline.nvim.git'
     --use 'https://github.com/lambdalisue/nerdfont.vim.git'
     --use 'https://github.com/lambdalisue/glyph-palette.vim.git'
 
