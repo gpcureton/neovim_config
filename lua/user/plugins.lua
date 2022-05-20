@@ -152,6 +152,7 @@ return packer.startup(function(use)
     use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through
                                                                          -- diffs for all modified files for any git rev.
+    use "will133/vim-dirdiff"  -- Vim plugin to diff two directories
     -- use 'sbdchd/neoformat' -- A (Neo)vim plugin for formatting code.
     --use 'puremourning/vimspector' -- A multi-language debugging system for Vim
     --use 'junegunn/gv.vim' -- A git commit browser in Vim
