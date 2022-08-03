@@ -37,6 +37,45 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-n>", ":bnext<CR>", opts)
 keymap("n", "<C-p>", ":bprevious<CR>", opts)
 
+Is_quickfix_list_open = false -- Global (quickfix list)
+
+ToggleQFList = function()
+    if not Is_quickfix_list_open then
+        vim.cmd [[copen]]
+        Is_quickfix_list_open = true
+    else
+        vim.cmd [[cclose]]
+        Is_quickfix_list_open = false
+    end
+end
+
+Is_location_list_open = false -- Local (location list)
+
+ToggleLocList = function()
+    if Is_location_list_open then
+        Is_location_list_open = true
+        vim.cmd [[lopen]]
+    else
+        Is_location_list_open = false
+        vim.cmd [[lclose]]
+    end
+end
+
+-- Quickfix and Location lists
+keymap("n", "<C-q>", ":lua ToggleQFList()<CR>")
+keymap("n", "<leader>qc", ":cexpr[]<CR>")
+keymap("n", "<M-l>", ":lua ToggleLocList()<CR>")
+keymap("n", "<leader>lc", ":lexpr[]<CR>")
+
+-- Navigating items in the quickfix list
+keymap("n", "<M-k>", ":cprev<CR>", opts)
+keymap("n", "<M-j>", ":cnext<CR>", opts)
+
+-- Navigating items in the location list
+keymap("n", "<leader>k", ":lprev<CR>", opts)
+keymap("n", "<leader>j", ":lnext<CR>", opts)
+
+
 -- Move text up and down
 -- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 -- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)

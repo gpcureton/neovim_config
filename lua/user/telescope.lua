@@ -58,6 +58,9 @@ telescope.setup {
                 ["<C-q>"] = actions.smart_send_to_qflist,
                 -- ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                 ["<M-q>"] = actions.smart_add_to_qflist,
+                -- ["<C-q>"] = actions.smart_send_to_loclist,
+                -- ["<M-q>"] = actions.smart_add_to_loclist,
+
                 ["<C-l>"] = actions.complete_tag,
                 ["<C-?>"] = actions.which_key, -- keys from pressing <C-/>
             },
@@ -76,6 +79,8 @@ telescope.setup {
                 ["<C-q>"] = actions.smart_send_to_qflist,
                 -- ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
                 ["<M-q>"] = actions.smart_add_to_qflist,
+                -- ["<C-q>"] = actions.smart_send_to_loclist,
+                -- ["<M-q>"] = actions.smart_add_to_loclist,
 
                 ["j"] = actions.move_selection_next,
                 ["k"] = actions.move_selection_previous,
@@ -148,6 +153,9 @@ telescope.load_extension('projects')
 -- <C-n>
 telescope.load_extension("neoclip")
 
+-- https://github.com/ElPiloto/telescope-vimwiki.nvim.git
+require('telescope').load_extension('vimwiki')
+
 -- GitHub CLI → local version
 require("telescope").load_extension "gh"
 
@@ -156,7 +164,6 @@ require("telescope").load_extension "gh"
 keymap("n", "<leader>te", ":Telescope ", opts)
 
 -- Using lua functions
-keymap("n", "<Leader>n", ":lua require('telescope').extensions.notify.notify()<CR>", opts)
 keymap("n", "<Leader>f", ":lua require('telescope.builtin').find_files()<CR>", opts)
 -- keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers()<CR>", opts)
 keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>", opts)
@@ -166,6 +173,9 @@ keymap("n", "<leader>fw", ":lua require('telescope.builtin').grep_string { searc
 keymap("n", "<leader>fh", ":lua require('telescope.builtin').help_tags()<CR>", opts)
 keymap("n", "<leader>fe", ":lua require('telescope.builtin').file_browser({cwd = vim.fn.expand('%:p:h')})<CR>", opts)
 --
+local fuzzy_buf_opt = require('telescope.themes').get_dropdown({height=10, previewer=false})
+keymap("n", "<leader>ffb", ":lua require('telescope.builtin').current_buffer_fuzzy_find(fuzzy_buf_opt)<CR>", opts)
+--
 keymap("n", "<leader>p", ":lua require('telescope.builtin').git_files()<CR>", opts)
 keymap("n", "<leader>gcr", ":lua require('telescope.builtin').git_commits()<CR>", opts)
 keymap("n", "<leader>gcb", ":lua require('telescope.builtin').git_bcommits()<CR>", opts)
@@ -174,9 +184,12 @@ keymap("n", "<leader>gb", ":lua require('telescope.builtin').git_branches()<CR>"
 --
 keymap("n", "<leader>gw", ":lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", opts)
 keymap("n", "<leader>gwc", ":lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>", opts)
-
-local fuzzy_buf_opt = require('telescope.themes').get_dropdown({height=10, previewer=false})
-keymap("n", "<leader>ffb", ":lua require('telescope.builtin').current_buffer_fuzzy_find(fuzzy_buf_opt)<CR>", opts)
+--
+keymap("n", "<Leader>n", ":lua require('telescope').extensions.notify.notify()<CR>", opts)
+keymap("n", "<leader>vw", ":lua require('telescope').extensions.vimwiki.vimwiki()<CR>", opts)
+keymap("n", "<leader>vg", ":lua require('telescope').extensions.vw.live_grep()<CR>", opts)
+keymap("n", "<leader>vp", ":!litemdview % &<CR>", opts)
+keymap("n", "<leader>vd", ":lua vim.cmd(\"put =strftime('%A %d %B, %Y, %H:%Mh %z')\")<CR>", opts)
 
 
 -- mappings.curr_buf = function()

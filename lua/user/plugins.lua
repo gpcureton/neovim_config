@@ -83,7 +83,7 @@ return packer.startup(function(use)
     -->> Colorschemes <<--
 
     use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-    use "lunarvim/darkplus.nvim"
+    -- use "lunarvim/darkplus.nvim"
     --use 'https://github.com/gosukiwi/vim-atom-dark.git'
     --use 'https://github.com/cocopon/iceberg.vim.git'
     --use 'https://github.com/morhetz/gruvbox.git'
@@ -153,6 +153,7 @@ return packer.startup(function(use)
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through
                                                                          -- diffs for all modified files for any git rev.
     use "will133/vim-dirdiff"  -- Vim plugin to diff two directories
+    use "preservim/tagbar" -- Vim plugin that displays tags in a window, ordered by scope
     -- use 'sbdchd/neoformat' -- A (Neo)vim plugin for formatting code.
     --use 'puremourning/vimspector' -- A multi-language debugging system for Vim
     --use 'junegunn/gv.vim' -- A git commit browser in Vim
@@ -202,6 +203,7 @@ return packer.startup(function(use)
     use 'nvim-telescope/telescope-github.nvim'
     --use 'nvim-telescope/telescope-project.nvim'
     --use 'nvim-telescope/telescope-frecency.nvim'
+    use 'ElPiloto/telescope-vimwiki.nvim'
     use {
       'pwntester/octo.nvim',
       requires = {
