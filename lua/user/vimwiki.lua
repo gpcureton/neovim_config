@@ -3,15 +3,15 @@
 --   return
 -- end
 
-local status_ok, notify = pcall(require, "notify")
-if status_ok then
-    vim.notify = notify
-    -- notify("The Notify plugin has loaded correctly.")
-else
-	return
-end
+-- local status_ok, notify = pcall(require, "notify")
+-- if status_ok then
+--     vim.notify = notify
+--     -- notify("The Notify plugin has loaded correctly.")
+-- else
+-- 	return
+-- end
 
-notify("We are loading the vimwiki options.")
+-- notify("We are loading the vimwiki options.")
 vim.cmd("let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]")
 -- vim.g.vimwiki_list = {{path = '~/Computer_Stuff/vimwiki/', syntax = 'markdown', ext = '.md'}}
 
