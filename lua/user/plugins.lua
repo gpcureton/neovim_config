@@ -49,7 +49,6 @@ return packer.startup(function(use)
     -- >>> Session Management <<<--
 
     use "goolord/alpha-nvim"
-    --use 'https://github.com/mhinz/vim-startify'  -- A fancy start screen for (N)vim
     use "ahmedkhalf/project.nvim"
 
     -- >>> Commenting stuff <<<--
@@ -76,7 +75,7 @@ return packer.startup(function(use)
     }
     use 'ryanoasis/vim-devicons' -- Add icons to your (N)vim
     --use 'https://github.com/GustavoKatel/sidebar.nvim.git' -- A generic and modular lua sidebar for Neovim
-    use 'https://github.com/simrat39/symbols-outline.nvim.git'
+    --[[ use 'https://github.com/simrat39/symbols-outline.nvim.git' ]]
     --use 'https://github.com/lambdalisue/nerdfont.vim.git'
     --use 'https://github.com/lambdalisue/glyph-palette.vim.git'
 
@@ -96,6 +95,12 @@ return packer.startup(function(use)
     --use 'https://github.com/cooper-anderson/glowbeam.vim.git'
     use 'vim-conf-live/vimconflive2021-colorscheme'
     use {'folke/tokyonight.nvim', branch = "main"}
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function()
+            require'colorizer'.setup {}
+        end
+    }
 
     -->> Buffer Management <<--
 
@@ -149,7 +154,7 @@ return packer.startup(function(use)
     use 'tpope/vim-fugitive' -- A Git wrapper so awesome, it should be illegal
     use 'ThePrimeagen/git-worktree.nvim' -- Working with git-worktree
     use "lewis6991/gitsigns.nvim" --  Git signs written in pure lua
-    use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher
+    --[[ use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher ]]
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through
                                                                          -- diffs for all modified files for any git rev.
     use "will133/vim-dirdiff"  -- Vim plugin to diff two directories
@@ -182,10 +187,26 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-    -- LSP
+    -- LSP old
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-    use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+
+    -- LSP new
+    --[[ use "neovim/nvim-lspconfig" -- enable LSP ]]
+    --[[ use { ]]
+    --[[     {"williamboman/mason.nvim", config = function() require'mason'.setup {} end}, ]]
+    --[[     "williamboman/mason-lspconfig.nvim", ]]
+    --[[     "neovim/nvim-lspconfig", ]]
+    --[[ } ]]
+    --[[ use 'williamboman/mason-lspconfig.nvim.git' ]]
+    --[[ use { ]]
+    --[[     'williamboman/mason.nvim', -- simple to use language server installer ]]
+    --[[     config = function() ]]
+    --[[         require'mason'.setup {} ]]
+    --[[     end ]]
+    --[[ } ]]
+
+    use "tamago324/nlsp-settings.nvim" -- A plugin for setting Neovim LSP with JSON or YAML files
     use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
     use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
     --use 'https://github.com/onsails/lspkind-nvim.git'

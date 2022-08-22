@@ -19,7 +19,7 @@ require "user.indentline"
 require "user.trouble"
 require "user.todo-comments"
 require "user.git-worktree"
-require "user.symbols-outline"
+--[[ require "user.symbols-outline" ]]
 require "user.vim-fugitive"
 require "user.alpha"
 require "user.whichkey"
