@@ -124,6 +124,7 @@ return packer.startup(function(use)
     use 'dbeniamine/cheat.sh-vim' -- A vim plugin to access cheat.sh sheets
     use "folke/which-key.nvim" -- WhichKey is a lua plugin that displays a popup with possible keybindings of the command you started typing
     use 'folke/todo-comments.nvim' -- Highlight, list and search todo comments in your projects
+    use 'ten3roberts/qf.nvim' -- Extends the default quickfix and location lists for neovim
     use 'folke/trouble.nvim' -- A pretty diagnostics, references, telescope results, quickfix and location list
                              -- to help you solve all the trouble your code is causing.
     use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
