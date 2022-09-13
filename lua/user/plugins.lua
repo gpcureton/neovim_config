@@ -94,7 +94,7 @@ return packer.startup(function(use)
     --use 'https://github.com/drewtempelmeyer/palenight.vim.git'
     --use 'https://github.com/cooper-anderson/glowbeam.vim.git'
     use 'vim-conf-live/vimconflive2021-colorscheme'
-    use {'folke/tokyonight.nvim', branch = "main"}
+    use {'folke/tokyonight.nvim'}
     use {
         'norcalli/nvim-colorizer.lua',
         config = function()
