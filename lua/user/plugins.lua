@@ -156,6 +156,7 @@ return packer.startup(function(use)
     use 'ThePrimeagen/git-worktree.nvim' -- Working with git-worktree
     use "lewis6991/gitsigns.nvim" --  Git signs written in pure lua
     --[[ use 'tpope/vim-dispatch' -- Asynchronous build and test dispatcher ]]
+    use "TimUntersberger/neogit" -- magit for neovim
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through
                                                                          -- diffs for all modified files for any git rev.
     use "will133/vim-dirdiff"  -- Vim plugin to diff two directories

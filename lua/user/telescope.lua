@@ -188,7 +188,7 @@ keymap("n", "<leader>gwc", ":lua require('telescope').extensions.git_worktree.cr
 keymap("n", "<Leader>n", ":lua require('telescope').extensions.notify.notify()<CR>", opts)
 keymap("n", "<leader>vw", ":lua require('telescope').extensions.vimwiki.vimwiki()<CR>", opts)
 keymap("n", "<leader>vg", ":lua require('telescope').extensions.vw.live_grep()<CR>", opts)
-keymap("n", "<leader>vp", ":!litemdview % &<CR>", opts)
+keymap("n", "<leader>vp", ":!qmarkdown -d % &<CR>", opts)
 keymap("n", "<leader>vd", ":lua vim.cmd(\"put =strftime('%A %d %B, %Y, %H:%Mh %z')\")<CR>", opts)
 
 
